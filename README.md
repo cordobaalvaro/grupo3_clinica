@@ -80,4 +80,4 @@ estos datos, aparecen si hay en la base de datos _(Json - LocalStorage)_ esos es
               línica: Bienestar Nutricional
               Dirección: Calle de la Salud 890, Oficina 307, Montevideo, Uruguay
     Si es aceptada, se va a ver en su pantalla un boton de AdminSecundario con un mensaje _AccesoDisponible_, en este puede ser redireccionado a una page con el formulario para dejar fechas y horarios disponibles. **ProfessionalPage.jsx**
-🔵🟢EL profesional aqui tendra acceso a todos las modificaciones disponibles con respecto a las citas programadas y a programar.
+- 🔵🟢EL profesional aqui tendra acceso a todos las modificaciones disponibles con respecto a las citas programadas y a programar.
