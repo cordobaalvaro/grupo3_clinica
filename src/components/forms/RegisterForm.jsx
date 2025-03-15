@@ -1,25 +1,30 @@
-import { useState } from 'react';
-import { Card, Button, Form, Col, Row, InputGroup } from 'react-bootstrap';
+import { Button, Form } from "react-bootstrap";
+import { useRegisterForm } from "../../hooks/useRegisterForm";
 
 const RegisterForm = () => {
+  const { registerUser, errores, handleChangeRegisterForm, handleClickForm, labels } = useRegisterForm();
   return (
-    <Row className='d-flex justify-content-center'>
-      <Col sm={10} md={4} xl={4} className='p-3'>
-        <Card className="p-3 mt-3">
-          <Form>
-            <Form.Group className="mb-3" controlId="formGroupEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formGroupPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
-            </Form.Group>
-          </Form>
-        </Card>
-      </Col>
-    </Row>
-  )
-}
+    <Form>
+      {["nameUser", "emailUser", "phoneUser", "passwordUser", "confirmPasswordUser"].map((campoInput, index) => (
+        <Form.Group className="mb-3" controlId={campoInput} key={index}>
+          <Form.Label>
+            {campoInput === "nameUser" ? "Nombre y Apellido" : campoInput === "emailUser" ? "Correo Electrónico" : campoInput === "phoneUser" ? "Teléfono" : campoInput === "passwordUser" ? "Contraseña" : "Confirmar Contraseña"}
+          </Form.Label>
+          <Form.Control
+            type={campoInput.includes("password") || campoInput.includes("confirmPassword") ? "password" : "text"}
+            placeholder={Ingresa tu ${labels[campoInput]}}
+            name={campoInput}
+            value={registerUser[campoInput]}
+            onChange={handleChangeRegisterForm}
+          />
+          {errores[campoInput] && <p className="text-danger">{errores[campoInput]}</p>}
+        </Form.Group>
+      ))}
+      <Button variant="primary" type="submit" onClick={handleClickForm} className="w-100">
+        Registrarse
+      </Button>
+    </Form>
+  );
+};
 
-export default RegisterForm
+export default RegisterForm;
