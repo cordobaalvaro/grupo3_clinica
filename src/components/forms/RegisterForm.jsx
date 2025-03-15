@@ -12,7 +12,7 @@ const RegisterForm = () => {
           </Form.Label>
           <Form.Control
             type={campoInput.includes("password") || campoInput.includes("confirmPassword") ? "password" : "text"}
-            placeholder={`Ingresa tu ${labels[campoInput]}`}
+            placeholder={Ingresa tu ${labels[campoInput]}}
             name={campoInput}
             value={registerUser[campoInput]}
             onChange={handleChangeRegisterForm}

@@ -3,6 +3,7 @@ import RegisterPage from "./page/RegisterPage";
 
 import "./App.css";
 
+
 function App() {
   return (
     <Router>
