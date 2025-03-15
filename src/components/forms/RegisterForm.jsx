@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Card, Button, Form, Col, Row, InputGroup } from 'react-bootstrap';
 
-const FormRegister = () => {
+const RegisterForm = () => {
   return (
     <Row className='d-flex justify-content-center'>
       <Col sm={10} md={4} xl={4} className='p-3'>
@@ -22,4 +22,4 @@ const FormRegister = () => {
   )
 }
 
-export default FormRegister
+export default RegisterForm
