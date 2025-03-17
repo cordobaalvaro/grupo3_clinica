@@ -1,0 +1,22 @@
+.parallax-slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* 🎯 Efecto Parallax */
+  color: white;
+  position: relative;
+}
+
+.parallax-content {
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  height: 100vh;
+}
+
+@media (min-width: 767px) {
+  .mover-derecha {
+    margin-left: 60%;
+  }
+  .mover-izquierda {
+    margin-right: 15%;
+  }
+}
