@@ -10,3 +10,8 @@ export const imagenesCarouselFormulario = [
   "https://vientodevida.org/servidorimagenes/imagenes/Dermatologia.jpg",
   "https://vientodevida.org/servidorimagenes/imagenes/Cardiologia.jpg",
 ];
+
+export const imagenesCarouselHomePage = [""];
+
+/* Aqui dejamos las fotos de perfil de especialistas */
+export const userPhoto = [""];

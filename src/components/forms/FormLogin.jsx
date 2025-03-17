@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { Card, Button, Form, Col, Row, InputGroup } from 'react-bootstrap';
+import { useState } from "react";
+import { Card, Button, Form, Col, Row, InputGroup } from "react-bootstrap";
 
 const FormLogin = () => {
   return (
-    <Row className='d-flex justify-content-center'>
-      <Col sm={10} md={4} xl={4} className='p-3'>
+    <Row className="d-flex justify-content-center">
+      <Col sm={10} md={4} xl={4} className="p-3">
         <Card className="p-3 mt-3">
           <Form>
             <Form.Group className="mb-3" controlId="formGroupEmail">
@@ -20,6 +20,6 @@ const FormLogin = () => {
       </Col>
     </Row>
   );
-}
+};
 
-export default FormLogin
+export default FormLogin;
