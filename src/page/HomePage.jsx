@@ -5,10 +5,10 @@ import { imagenesCarouselFormulario } from "../database/imagenesServidor";
 const HomePage = () => {
   return (
     <>
-      <CarouselComponent
+      {/* <CarouselComponent
         idCarousel="carouselhome"
         carouselReutilizable={imagenesCarouselFormulario}
-      />
+      /> */}
     </>
   );
 };
