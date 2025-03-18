@@ -22,7 +22,7 @@ const HomePage = () => {
                   imagePerfil={especialista.imagePerfil}
                   nombre={especialista.nombre}
                   description={especialista.descripcionCard}
-                  idEspecialist={especialista.id}
+                  idEspecialist={especialista.nombre}
                 />
               </Col>
             ))
