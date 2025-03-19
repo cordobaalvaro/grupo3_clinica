@@ -3,17 +3,18 @@ import { Link, NavLink, useParams } from 'react-router-dom';
 import especialistasData from '../database/apiServicios.json'
 
 const SpecialistDetailsPage = () => {
-  const { id } = useParams();
+  const { nombre } = useParams();
+  const nombreFormateado = nombre.replace(/_/g, " ");
   const [especialista, setEspecialista] = useState(null);
 
   useEffect(() => {
     const obtenerEspecialista = () => {
-      const encontrado = especialistasData.find((esp) => esp.id === parseInt(id));
+      const encontrado = especialistasData.find((esp) => esp.nombre === nombreFormateado);
       setEspecialista(encontrado || null);
     };
 
     obtenerEspecialista();
-  }, [id]);
+  }, [nombre]);
 
   if (!especialista) {
     return <p>Cargando o especialista no encontrado...</p>;

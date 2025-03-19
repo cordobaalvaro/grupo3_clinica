@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const SpecialistComponent = ({ imagePerfil, nombre, description, idEspecialist }) => {
@@ -13,7 +13,7 @@ const SpecialistComponent = ({ imagePerfil, nombre, description, idEspecialist }
           <Card.Text>
             {description} {nombre}
           </Card.Text>
-          <Link to={`/detalle-especialista/${idEspecialist}`} className='btn btn-primary'>Ver más</Link>
+          <Link to={`/detalle-especialista/${idEspecialist.replace(/ /g, "_")}`} className='btn btn-primary'>Ver más</Link>
         </Card.Body>
       </Card>
     </>
