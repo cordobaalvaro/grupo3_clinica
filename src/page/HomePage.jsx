@@ -5,7 +5,7 @@ import SpecialistComponent from "../components/layout/specialistComponent/Specia
 import ContactPage from "../components/layout/contactComponent/ContactComponent";
 
 import { imagenesCarouselFormulario } from "../database/imagenesServidor";
-import especialistasApi from '../database/apiServicios.json'
+import especialistasApi from "../database/apiServicios.json";
 
 const HomePage = () => {
   return (
@@ -14,21 +14,20 @@ const HomePage = () => {
         idCarousel="carouselhome"
         carouselReutilizable={imagenesCarouselFormulario}
       />
-        <Container>
-          <Row>
-            { especialistasApi.map((especialista, index) => (
-              <Col md={4} className="mb-4" key={index}>
-                <SpecialistComponent
-                  imagePerfil={especialista.imagePerfil}
-                  nombre={especialista.nombre}
-                  description={especialista.descripcionCard}
-                  idEspecialist={especialista.nombre}
-                />
-              </Col>
-            ))
-            }
-          </Row>
-        </Container>
+      <Container>
+        <Row>
+          {especialistasApi.map((especialista, index) => (
+            <Col md={4} className="mb-4" key={index}>
+              <SpecialistComponent
+                imagePerfil={especialista.imagePerfil}
+                nombre={especialista.nombre}
+                description={especialista.descripcionCard}
+                idEspecialist={especialista.nombre}
+              />
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </>
   );
 };
