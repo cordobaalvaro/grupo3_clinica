@@ -1,8 +1,15 @@
 import React from "react";
 import { Button, Carousel } from "react-bootstrap";
 import "./CarouselComponent.css";
+import { useNavigate } from "react-router-dom";
 
 const CarouselComponent = ({ carouselReutilizable, idCarousel }) => {
+  const navigate = useNavigate();
+  const hanldeClickButtonCarousel = () => {
+    setTimeout(() => {
+      navigate("/pagina-registro");
+    }, 1000);
+  };
   return (
     <Carousel className="img-fluid ">
       {carouselReutilizable.map((imagen, index) => (
@@ -27,11 +34,12 @@ const CarouselComponent = ({ carouselReutilizable, idCarousel }) => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptatem
                   </p>
-                  <Button variant="primary" className="me-3 mb-3">
-                    Primary
-                  </Button>
-                  <Button variant="success" className=" mb-3">
-                    Success
+                  <Button
+                    variant="primary"
+                    onClick={hanldeClickButtonCarousel}
+                    className="me-3 mb-3"
+                  >
+                    Registrate
                   </Button>
                 </div>
               </div>
