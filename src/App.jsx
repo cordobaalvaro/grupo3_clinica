@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./page/HomePage";
+import UserPage from "./page/UserPage";
+import AdminPage from "./page/AdminPage";
 import RegisterPage from "./page/RegisterPage";
+import SpecialistPage from "./page/SpecialistPage";
+import LoginForm from "./components/forms/LoginForm";
+import SpecialistDetailsPage from "./page/SpecialistDetailsPage";
 import NavbarPage from "./components/layout/navbarComponent/NavbarIdPage";
 
 import "./App.css";
-import HomePage from "./page/HomePage";
-import SpecialistDetailsPage from "./page/SpecialistDetailsPage";
-import SpecialistPage from "./page/SpecialistPage";
-import LoginForm from "./components/forms/LoginForm";
-import AdminPage from "./page/AdminPage";
-import UserPage from "./page/UserPage";
 
 function App() {
   return (
