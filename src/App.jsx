@@ -10,12 +10,15 @@ import SpecialistPage from "./page/SpecialistPage";
 function App() {
   return (
     <Router>
-      <NavbarPage idPage='administrador' />
+      <NavbarPage idPage="administrador" />
       <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/registerpage' element={<RegisterPage />} />
-        <Route path='/detalle-especialista/:nombre' element={<SpecialistDetailsPage />} />
-        <Route path='/pagina-especialista' element={<SpecialistPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/pagina-registro" element={<RegisterPage />} />
+        <Route
+          path="/detalle-especialista/:nombre"
+          element={<SpecialistDetailsPage />}
+        />
+        <Route path="/pagina-especialista" element={<SpecialistPage />} />
       </Routes>
     </Router>
   );

@@ -7,7 +7,7 @@ const CarouselComponent = ({ carouselReutilizable, idCarousel }) => {
   const navigate = useNavigate();
   const hanldeClickButtonCarousel = () => {
     setTimeout(() => {
-      navigate("/registerpage");
+      navigate("/pagina-registro");
     }, 1000);
   };
   return (
