@@ -23,15 +23,15 @@ const FooterC = () => {
           lg="4"
           className="d-flex align-items-center justify-content-center mt-3"
         >
-          <Link>
+          <a href="https://www.facebook.com/" target="_balnk">
             <FaFacebook size={40} color="#49f1d8" />
-          </Link>
-          <Link>
-            <FaInstagram size={40} color="#00FF80" />
-          </Link>
-          <Link>
-            <FaTwitter size={40} color="#49f1d8" />
-          </Link>
+          </a>
+          <a href="https://www.facebook.com/" target="_balnk">
+            <FaTwitter size={40} color="#00FF80" />
+          </a>
+          <a href="https://www.facebook.com/" target="_balnk">
+            <FaInstagram size={40} color="#49f1d8" />
+          </a>
         </Col>
         <Col
           sm="12"
