@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { contraseniaCoinciden, contraseniaNoCoinciden, validateRegisterForm } from "../utils/validations";
 import { useNavigate } from "react-router-dom";
-
+import { contraseniaCoinciden, contraseniaNoCoinciden, validateRegisterForm } from "../utils/validations";
 
 export const useRegisterForm = () => {
   const navigate = useNavigate();
@@ -25,6 +24,7 @@ export const useRegisterForm = () => {
 
     const usuariosLs = JSON.parse(localStorage.getItem('usuarios')) || []
     const usuarioExistente = usuariosLs.find((usuario) => usuario.nameUser === registerUser.nameUser)
+    const passwordExistente = usuariosLs.find((password) => password.passwordUser === registerUser.passwordUser)
     console.log(usuarioExistente);
 
     const nuevosErrores = {};
@@ -37,7 +37,7 @@ export const useRegisterForm = () => {
     setErrores(nuevosErrores)
     
     if (Object.keys(nuevosErrores).length === 0) {
-      if (usuarioExistente) {
+      if (usuarioExistente && passwordExistente) {
           if (usuarioExistente.rol === 'usuario') {
             setTimeout(() => {
               navigate('/pagina-de-usuario')
@@ -46,7 +46,7 @@ export const useRegisterForm = () => {
             navigate('/pagina-de-administrador')
           }
       } else {
-        alert('usuario no existe')
+        alert('El usuario o contraseña son incorrectos!')
       }
     }
   }
