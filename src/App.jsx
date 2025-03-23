@@ -13,7 +13,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <NavbarPage idPage="administrador" />
+      <NavbarPage/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/pagina-registro" element={<RegisterPage />} />
