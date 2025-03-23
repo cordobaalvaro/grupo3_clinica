@@ -1,30 +1,39 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { contraseniaCoinciden, contraseniaNoCoinciden, validateRegisterForm } from "../utils/validations";
+import {
+  contraseniaCoinciden,
+  contraseniaNoCoinciden,
+  validateRegisterForm
+} from "../utils/validations";
 
 export const useRegisterForm = () => {
   const navigate = useNavigate();
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Nuevo estado para controlar si el usuario está logueado
 
   const [registerUser, setRegisterUser] = useState({
     nameUser: "",
     emailUser: "",
     phoneUser: "",
     passwordUser: "",
-    confirmPasswordUser: "",
+    confirmPasswordUser: ""
   });
 
   const [errores, setErrores] = useState({});
 
-  const handleChangeRegisterForm = (e) => {
+  const handleChangeRegisterForm = e => {
     setRegisterUser({ ...registerUser, [e.target.name]: e.target.value });
   };
 
-  const handleChangeLoginForm = (e) => {
-    e.preventDefault()
+  const handleChangeLoginForm = e => {
+    e.preventDefault();
 
-    const usuariosLs = JSON.parse(localStorage.getItem('usuarios')) || []
-    const usuarioExistente = usuariosLs.find((usuario) => usuario.nameUser === registerUser.nameUser)
-    const passwordExistente = usuariosLs.find((password) => password.passwordUser === registerUser.passwordUser)
+    const usuariosLs = JSON.parse(localStorage.getItem("usuarios")) || [];
+    const usuarioExistente = usuariosLs.find(
+      usuario => usuario.nameUser === registerUser.nameUser
+    );
+    const passwordExistente = usuariosLs.find(
+      password => password.passwordUser === registerUser.passwordUser
+    );
     console.log(usuarioExistente);
 
     const nuevosErrores = {};
@@ -33,63 +42,103 @@ export const useRegisterForm = () => {
     }
     if (!registerUser.passwordUser.trim()) {
       nuevosErrores.passwordUser = "El campo contraseña está vacía.";
-    }    
-    setErrores(nuevosErrores)
-    
+    }
+    setErrores(nuevosErrores);
+
     if (Object.keys(nuevosErrores).length === 0) {
-      if (usuarioExistente && passwordExistente) {
-          if (usuarioExistente.rol === 'usuario') {
-            setTimeout(() => {
-              navigate('/pagina-de-usuario')
-            }, 1000);
-          } else {
-            navigate('/pagina-de-administrador')
-          }
+      if (usuarioExistente) {
+        usuarioExistente.login = true;
+        setIsLoggedIn(true); // Actualizar el estado de autenticación
+
+        const usuariosActualizados = usuariosLs.map(user =>
+          user.id === usuarioExistente.id ? usuarioExistente : user
+        );
+        localStorage.setItem("usuarios", JSON.stringify(usuariosActualizados));
+
+        sessionStorage.setItem(
+          "usuarioLogueado",
+          JSON.stringify(usuarioExistente)
+        );
+
+        if (usuarioExistente.rol === "usuario") {
+          setTimeout(() => {
+            navigate("/pagina-de-usuario");
+          }, 1000);
+        } else {
+          navigate("/pagina-de-administrador");
+        }
       } else {
-        alert('El usuario o contraseña son incorrectos!')
+        alert("usuario no existe");
       }
     }
-  }
-  
-  const handleClickForm = (e) => {
+
+    sessionStorage.setItem("usuarioLogueado", JSON.stringify(usuarioExistente));
+  };
+
+  const handleClickForm = e => {
     e.preventDefault();
     const nuevosErrores = validateRegisterForm(registerUser);
     const coinciden = contraseniaCoinciden(registerUser);
     const noCoinciden = contraseniaNoCoinciden(registerUser);
 
     if (Object.keys(nuevosErrores).length === 0) {
-      if(coinciden){
-          const usuariosLs = JSON.parse(localStorage.getItem("usuarios")) || [];
-          const nuevoUsuario = {
-            id: usuariosLs[usuariosLs.length - 1]?.id + 1 || 1,
-            ...registerUser,
-            rol: "usuario",
-            login: false,
-            status: "enable",
-          };
-    
-          usuariosLs.push(nuevoUsuario);
-          localStorage.setItem("usuarios", JSON.stringify(usuariosLs));
-    
-          setRegisterUser({
-            nameUser: "",
-            emailUser: "",
-            phoneUser: "",
-            passwordUser: "",
-            confirmPasswordUser: "",
-          });
+      if (coinciden) {
+        const usuariosLs = JSON.parse(localStorage.getItem("usuarios")) || [];
+        const nuevoUsuario = {
+          id: usuariosLs[usuariosLs.length - 1]?.id + 1 || 1,
+          ...registerUser,
+          rol: "usuario",
+          login: false,
+          status: "enable"
+        };
+
+        usuariosLs.push(nuevoUsuario);
+        localStorage.setItem("usuarios", JSON.stringify(usuariosLs));
+
+        setRegisterUser({
+          nameUser: "",
+          emailUser: "",
+          phoneUser: "",
+          passwordUser: "",
+          confirmPasswordUser: ""
+        });
         setTimeout(() => {
-          alert('Registro exito - inicia sesión')
-          navigate('/inicio-de-sesion');
+          alert("Registro exito - inicia sesión");
+          navigate("/inicio-de-sesion");
         }, 1000);
       } else {
         setErrores(noCoinciden);
       }
     } else {
-      setErrores(...nuevosErrores, ...noCoinciden)
+      setErrores(...nuevosErrores, ...noCoinciden);
     }
   };
+  const handleLogoutUser = () => {
+    const usuariosLs = JSON.parse(localStorage.getItem("usuarios")) || [];
+    const usuarioLogueado = JSON.parse(
+      sessionStorage.getItem("usuarioLogueado")
+    );
 
+    if (!usuarioLogueado) {
+      alert("No hay usuario logueado.");
+      return;
+    }
+
+    // Buscar al usuario en la lista y actualizar su estado de login
+    const usuariosActualizados = usuariosLs.map(user =>
+      user.id === usuarioLogueado.id ? { ...user, login: false } : user
+    );
+
+    // Guardar cambios en localStorage
+    localStorage.setItem("usuarios", JSON.stringify(usuariosActualizados));
+
+    // Eliminar el usuario activo de sessionStorage
+    sessionStorage.removeItem("usuarioLogueado");
+
+    setTimeout(() => {
+      navigate("/");
+    }, 500);
+  };
   const labels = {
     nameUser: "Nombre y Apellido",
     emailUser: "Correo Electrónico",
@@ -98,5 +147,15 @@ export const useRegisterForm = () => {
     confirmPasswordUser: "Confirmar Contraseña"
   };
 
-  return { registerUser, errores, handleChangeRegisterForm, handleChangeLoginForm, handleClickForm, labels };
+  return {
+    registerUser,
+    errores,
+    isLoggedIn, // Devolver el estado de autenticación
+    setIsLoggedIn, // Devolver la función para actualizar el estado de autenticación
+    handleChangeRegisterForm,
+    handleChangeLoginForm,
+    handleClickForm,
+    handleLogoutUser,
+    labels
+  };
 };

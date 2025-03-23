@@ -13,14 +13,17 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <NavbarPage idPage='administrador' />
+      <NavbarPage />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/inicio-de-sesion' element={<LoginForm />} />
         <Route path='/pagina-de-usuario' element={<UserPage />} />
         <Route path='/pagina-de-administrador' element={<AdminPage />} />
         <Route path='/pagina-registro' element={<RegisterPage />} />
-        <Route path='/detalle-especialista/:nombre' element={<SpecialistDetailsPage />} />
+        <Route
+          path='/detalle-especialista/:nombre'
+          element={<SpecialistDetailsPage />}
+        />
         <Route path='/pagina-especialista' element={<SpecialistPage />} />
       </Routes>
     </Router>

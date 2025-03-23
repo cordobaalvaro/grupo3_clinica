@@ -1,10 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { useRegisterForm } from "../../../hooks/useRegisterForm";
 
 const NavUsuario = () => {
+  const { handleLogoutUser } = useRegisterForm();
+
   return (
     <>
       <Navbar expand='lg' className='bg-body-tertiary'>
@@ -29,8 +32,8 @@ const NavUsuario = () => {
               <NavLink className={"nav-link"} to='/'>
                 Trabaja con nosotros
               </NavLink>
-              <NavLink className={"nav-link"} to='/'>
-                Cerrar sesión
+              <NavLink className={"nav-link"} to='#' onClick={handleLogoutUser}>
+                Cerrar sesion
               </NavLink>
             </Nav>
           </Navbar.Collapse>
