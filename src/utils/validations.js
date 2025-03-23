@@ -1,3 +1,4 @@
+
 export const validateRegisterForm = (registerUser) => {
   const errores = {};
 
@@ -16,9 +17,17 @@ export const validateRegisterForm = (registerUser) => {
   if (!registerUser.confirmPasswordUser.trim()) {
     errores.confirmPasswordUser = "El campo confirmación de contraseña está vacío.";
   }
-  if (registerUser.passwordUser !== registerUser.confirmPasswordUser) {
-    alert = "Las contraseñas no coinciden.";
-  }
 
   return errores;
 };
+
+export const contraseniaCoinciden = (registerUser) => {
+  const coinciden = registerUser.passwordUser === registerUser.confirmPasswordUser
+  return coinciden;
+}
+
+export const contraseniaNoCoinciden = (registerUser) => {
+  return registerUser.passwordUser !== registerUser.confirmPasswordUser
+    ? { confirmPasswordUser: "Las contraseñas no coinciden." }
+    : {};
+}

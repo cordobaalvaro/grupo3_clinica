@@ -26,10 +26,10 @@ const FooterC = () => {
           <a href="https://www.facebook.com/" target="_balnk">
             <FaFacebook size={40} color="#49f1d8" />
           </a>
-          <a href="https://www.facebook.com/" target="_balnk">
+          <a href="https://x.com/" target="_balnk">
             <FaTwitter size={40} color="#00FF80" />
           </a>
-          <a href="https://www.facebook.com/" target="_balnk">
+          <a href="https://x.com/" target="_balnk">
             <FaInstagram size={40} color="#49f1d8" />
           </a>
         </Col>
