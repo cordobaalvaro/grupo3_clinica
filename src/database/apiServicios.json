@@ -23,6 +23,11 @@
         "parrafo": "Nuestro compromiso es brindar una atención de excelencia, adaptándonos a las necesidades de cada paciente, promoviendo su bienestar y recuperación mediante un equipo de traumatólogos, ortopedistas y kinesiólogos especializados."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": "Nahuel Jimenez"
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/traumatologia.jpeg",
     "servicios": {
@@ -56,6 +61,11 @@
         "parrafo": "Nuestro compromiso es acompañar a cada persona en su proceso de bienestar emocional, proporcionando un ambiente de confianza y seguridad, donde puedan sentirse escuchados y comprendidos por un equipo altamente calificado."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": "Rodrigo CasaGrande"
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/psicologia.jpeg",
     "servicios": {
@@ -87,6 +97,11 @@
       },
       {
         "parrafo": "Nuestro compromiso es ofrecer un entorno seguro y acogedor donde los niños y sus familias se sientan respaldados en todo momento."
+      }
+    ],
+    "medicos": [
+      {
+        "nombreMedico": ""
       }
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
@@ -123,6 +138,11 @@
         "parrafo": "Nuestro objetivo es brindar atención odontológica de calidad, asegurando la salud y bienestar bucal de nuestros pacientes."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": ""
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/odontologia.jpeg",
     "servicios": {
@@ -155,6 +175,11 @@
       },
       {
         "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestros pacientes a través de una alimentación equilibrada y adaptada a sus necesidades individuales."
+      }
+    ],
+    "medicos": [
+      {
+        "nombreMedico": ""
       }
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
@@ -190,6 +215,11 @@
         "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestros pacientes mediante un diagnóstico temprano y un tratamiento efectivo y especializado."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": ""
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/neurologia.jpeg",
     "servicios": {
@@ -221,6 +251,11 @@
       },
       {
         "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestros pacientes a través de un enfoque preventivo y un tratamiento oportuno."
+      }
+    ],
+    "medicos": [
+      {
+        "nombreMedico": ""
       }
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
@@ -257,6 +292,11 @@
         "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestras pacientes mediante un enfoque integral y personalizado en cada etapa de su vida."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": ""
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/ginecologia.jpeg",
     "servicios": {
@@ -291,6 +331,11 @@
         "parrafo": "Nuestro objetivo es mejorar la salud y apariencia de la piel de nuestros pacientes a través de un enfoque integral y personalizado."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": ""
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/dermatologia.jpeg",
     "servicios": {
@@ -323,6 +368,11 @@
       },
       {
         "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestros pacientes a través de un diagnóstico temprano y un tratamiento integral y personalizado."
+      }
+    ],
+    "medicos": [
+      {
+        "nombreMedico": ""
       }
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",

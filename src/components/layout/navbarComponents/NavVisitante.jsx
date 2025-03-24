@@ -27,6 +27,9 @@ const NavVisitante = () => {
               <NavLink className={"nav-link"} to='/'>
                 Contacto
               </NavLink>
+              <NavLink className={"nav-link"} to='/realizar-turno'>
+                Sacar Turno
+              </NavLink>
             </Nav>
             <Nav className='ms-auto'>
               <NavLink className={"nav-link"} to='/inicio-de-sesion'>

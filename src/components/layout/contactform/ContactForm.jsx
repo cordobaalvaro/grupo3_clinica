@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import "./ContactForm.css";
 const ContactFormHomePage = () => {
   return (
     <>
@@ -28,8 +29,17 @@ const ContactFormHomePage = () => {
 
         <Form.Group className='mb-3'>
           <Form.Label className='text-muted'>ESPECIALIDAD</Form.Label>
-          <Form.Select disabled>
-            <option></option>
+          <Form.Select enabled>
+            <option value=''>Selecciona una especialidad</option>
+            <option value='Cardiología'>Cardiología</option>
+            <option value='Dermatología'>Dermatología</option>
+            <option value='Pediatría'>Pediatría</option>
+            <option value='Traumatología'>Traumatología</option>
+            <option value='Psicología'>Psicología</option>
+            <option value='Odontología'>Odontología</option>
+            <option value='Nutrición'>Nutrición</option>
+            <option value='Neurología'>Neurología</option>
+            <option value='Ginecología'>Ginecología</option>
           </Form.Select>
         </Form.Group>
 
@@ -39,7 +49,7 @@ const ContactFormHomePage = () => {
         </Form.Group>
 
         <Button
-          className='fw-bold btn-success mt-3 w-100'
+          className='fw-bold mt-3 w-100 boton-enviar'
           variant='primary'
           type='submit'
         >
