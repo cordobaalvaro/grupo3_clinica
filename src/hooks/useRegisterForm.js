@@ -46,7 +46,7 @@ export const useRegisterForm = () => {
     setErrores(nuevosErrores);
 
     if (Object.keys(nuevosErrores).length === 0) {
-      if (usuarioExistente) {
+      if (usuarioExistente && passwordExistente) {
         usuarioExistente.login = true;
         setIsLoggedIn(true); // Actualizar el estado de autenticación
 
@@ -67,12 +67,12 @@ export const useRegisterForm = () => {
         } else {
           navigate("/pagina-de-administrador");
         }
+        sessionStorage.setItem("usuarioLogueado", JSON.stringify(usuarioExistente));
       } else {
-        alert("usuario no existe");
+        alert("usuario y/o contraseña no existe");
       }
     }
 
-    sessionStorage.setItem("usuarioLogueado", JSON.stringify(usuarioExistente));
   };
 
   const handleClickForm = e => {
@@ -110,14 +110,12 @@ export const useRegisterForm = () => {
         setErrores(noCoinciden);
       }
     } else {
-      setErrores(...nuevosErrores, ...noCoinciden);
+      setErrores(nuevosErrores, noCoinciden);
     }
   };
   const handleLogoutUser = () => {
     const usuariosLs = JSON.parse(localStorage.getItem("usuarios")) || [];
-    const usuarioLogueado = JSON.parse(
-      sessionStorage.getItem("usuarioLogueado")
-    );
+    const usuarioLogueado = JSON.parse(sessionStorage.getItem("usuarioLogueado"));
 
     if (!usuarioLogueado) {
       alert("No hay usuario logueado.");
@@ -134,6 +132,7 @@ export const useRegisterForm = () => {
 
     // Eliminar el usuario activo de sessionStorage
     sessionStorage.removeItem("usuarioLogueado");
+    // localStorage.removeItem('usuarios'); SE AGREGA EN EL CASO DE LIMPIAR EL TURNO EN EL LS
 
     setTimeout(() => {
       navigate("/");
