@@ -1,10 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { useRegisterForm } from "../../../hooks/useRegisterForm";
 
 const NavAdministrador = () => {
+  const { handleLogoutUser } = useRegisterForm(); // Obtener la función para actualizar el estado de autenticación
+
   return (
     <>
       <Navbar expand='lg' className='bg-body-tertiary'>
@@ -23,7 +26,7 @@ const NavAdministrador = () => {
               </NavLink>
             </Nav>
             <Nav className='ms-auto'>
-              <NavLink className={"nav-link"} to='/'>
+              <NavLink className={"nav-link"} to='#' onClick={handleLogoutUser}>
                 Cerrar sesión
               </NavLink>
             </Nav>
@@ -35,3 +38,4 @@ const NavAdministrador = () => {
 };
 
 export default NavAdministrador;
+

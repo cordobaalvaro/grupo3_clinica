@@ -1,0 +1,337 @@
+[
+  {
+    "id": 1,
+    "nombre": "Servicio de Traumatología",
+    "descripcionCard": "Conoce mas acerca del ",
+    "descripcion": [
+      {
+        "parrafo": "El Servicio de Traumatología de la ClínicaGrupo#3 se dedica a ofrecer una atención integral y especializada para pacientes con lesiones y patologías del sistema musculoesquelético. Nuestro principal objetivo es proporcionar un tratamiento eficiente y personalizado, garantizando la mejor calidad de atención en cada caso."
+      },
+      {
+        "parrafo": "Contamos con un equipo de profesionales altamente capacitados que trabajan en conjunto con otras especialidades médicas, asegurando un abordaje interdisciplinario que permite atender cualquier condición traumatológica con la mejor tecnología disponible."
+      },
+      {
+        "parrafo": "Nuestro servicio ofrece atención permanente en guardia externa e internación, brindando soluciones rápidas y efectivas para todo tipo de emergencias traumatológicas. Además, disponemos de estudios por imágenes de alta complejidad para agilizar el diagnóstico y tratamiento."
+      },
+      {
+        "parrafo": "El seguimiento del paciente es una de nuestras prioridades. Por ello, ofrecemos consultas especializadas en nuestros consultorios externos, donde se realizan evaluaciones periódicas, rehabilitación y tratamientos personalizados según cada caso en particular."
+      },
+      {
+        "parrafo": "En la Sala de Observaciones, disponemos de camas para internación transitoria para aquellos pacientes que requieren tratamientos específicos o necesitan aguardar su derivación a otro centro de mayor complejidad en caso necesario."
+      },
+      {
+        "parrafo": "Nuestro compromiso es brindar una atención de excelencia, adaptándonos a las necesidades de cada paciente, promoviendo su bienestar y recuperación mediante un equipo de traumatólogos, ortopedistas y kinesiólogos especializados."
+      }
+    ],
+    "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
+    "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/traumatologia.jpeg",
+    "servicios": {
+      "guardia": "Disponemos de atención permanente en guardia externa e internación para atender urgencias traumatológicas, apoyados en estudios por imágenes de alta complejidad y un equipo de especialistas de guardia.",
+      "consultorios": "Contamos con consultorios especializados para el seguimiento de pacientes con patologías traumatológicas, lesiones deportivas y enfermedades articulares. El seguimiento se realiza con traumatólogos de cabecera y especialistas en ortopedia.",
+      "internacion": "En nuestra Sala de Observaciones disponemos de camas para internación transitoria de pacientes que requieren tratamiento, observación postquirúrgica o derivaciones a otros centros especializados cuando sea necesario.",
+      "equipo_medico": "Nuestro staff cuenta con un equipo fijo de traumatólogos, especialistas en cirugía ortopédica y kinesiólogos que trabajan de manera interdisciplinaria para garantizar una recuperación óptima de los pacientes."
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Servicio de Psicología",
+    "descripcionCard": "Conoce mas acerca del ",
+    "descripcion": [
+      {
+        "parrafo": "El Servicio de Psicología de la ClínicaGrupo#3 ofrece un espacio de contención, diagnóstico y tratamiento para personas que requieren apoyo en su bienestar emocional y mental. Nuestro objetivo es brindar una atención de calidad, donde cada paciente reciba la orientación necesaria para mejorar su calidad de vida."
+      },
+      {
+        "parrafo": "Trabajamos con un enfoque interdisciplinario, integrando diversas técnicas y métodos terapéuticos para atender a niños, adolescentes y adultos. Nuestro equipo de especialistas está preparado para abordar una amplia variedad de problemáticas psicológicas con profesionalismo y compromiso."
+      },
+      {
+        "parrafo": "Disponemos de un servicio de atención psicológica de urgencia en nuestra guardia externa para aquellas personas que requieran asistencia inmediata en situaciones de crisis emocionales, ataques de ansiedad, depresión severa u otros episodios de salud mental."
+      },
+      {
+        "parrafo": "En nuestros consultorios externos, ofrecemos terapias individuales, familiares y grupales, brindando herramientas efectivas para la resolución de conflictos, manejo del estrés y desarrollo personal. Asimismo, contamos con un equipo de psiquiatras para el tratamiento de trastornos que requieren abordaje farmacológico."
+      },
+      {
+        "parrafo": "Sabemos que cada paciente es único, por lo que adaptamos cada proceso terapéutico a sus necesidades. Además, ofrecemos sesiones tanto presenciales como virtuales para garantizar el acceso a la atención psicológica en distintas circunstancias."
+      },
+      {
+        "parrafo": "Nuestro compromiso es acompañar a cada persona en su proceso de bienestar emocional, proporcionando un ambiente de confianza y seguridad, donde puedan sentirse escuchados y comprendidos por un equipo altamente calificado."
+      }
+    ],
+    "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
+    "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/psicologia.jpeg",
+    "servicios": {
+      "guardia": "Disponemos de atención psicológica de urgencia para pacientes que requieran asistencia inmediata en situaciones de crisis emocionales, ataques de ansiedad o estrés severo.",
+      "consultorios": "Contamos con consultorios especializados en terapia individual, terapia familiar y terapia infantil, atendiendo problemáticas como ansiedad, depresión, trastornos de la conducta y orientación vocacional.",
+      "equipo_medico": "Nuestro equipo está compuesto por psicólogos clínicos, psicoterapeutas y psiquiatras que trabajan en conjunto para brindar una atención integral a cada paciente, asegurando un abordaje terapéutico adecuado a cada necesidad.",
+      "modalidad": "Ofrecemos sesiones presenciales y virtuales para garantizar el acceso a la atención psicológica en distintos contextos y situaciones."
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Servicio de Pediatría",
+    "descripcionCard": "Conoce mas acerca del ",
+    "descripcion": [
+      {
+        "parrafo": "El Servicio de Pediatría de la ClínicaGrupo#3 se especializa en la atención integral de bebés, niños y adolescentes, brindando un servicio de alta calidad adaptado a las necesidades de cada paciente y su familia."
+      },
+      {
+        "parrafo": "Contamos con un equipo interdisciplinario de pediatras generales y subespecialistas que trabajan en conjunto para ofrecer diagnóstico, tratamiento y prevención de enfermedades infantiles."
+      },
+      {
+        "parrafo": "Disponemos de atención permanente en guardia externa e internación, con un equipo médico capacitado para abordar cualquier urgencia pediátrica."
+      },
+      {
+        "parrafo": "En nuestros consultorios externos, realizamos controles de crecimiento y desarrollo, vacunaciones y seguimiento de patologías crónicas en niños y adolescentes."
+      },
+      {
+        "parrafo": "En la Sala de Observaciones, contamos con camas para internación transitoria, destinadas a tratamientos, monitoreo y derivaciones en caso necesario."
+      },
+      {
+        "parrafo": "Nuestro compromiso es ofrecer un entorno seguro y acogedor donde los niños y sus familias se sientan respaldados en todo momento."
+      }
+    ],
+    "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
+    "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/pediatria.jpeg",
+    "servicios": {
+      "guardia": "Disponemos de atención pediátrica de urgencia las 24 horas, brindando asistencia inmediata para enfermedades agudas, traumatismos y otras emergencias infantiles.",
+      "consultorios": "Contamos con consultorios especializados para el seguimiento del crecimiento y desarrollo infantil, atención de patologías crónicas y vacunaciones.",
+      "internacion": "Nuestra Sala de Observaciones dispone de camas para internación transitoria de niños que requieren tratamiento, monitoreo o derivaciones a centros de mayor complejidad.",
+      "equipo_medico": "Nuestro equipo está compuesto por pediatras generales y subespecialistas en diversas áreas como neonatología, neumología y gastroenterología pediátrica, asegurando un abordaje integral.",
+      "modalidad": "Ofrecemos atención tanto en modalidad presencial como en consultas virtuales para facilitar el acceso a la pediatría en cualquier situación."
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Servicio de Odontología",
+    "descripcionCard": "Conoce mas acerca del ",
+    "descripcion": [
+      {
+        "parrafo": "El Servicio de Odontología de la ClínicaGrupo#3 ofrece atención especializada en la prevención, diagnóstico y tratamiento de enfermedades bucodentales en niños y adultos."
+      },
+      {
+        "parrafo": "Contamos con odontólogos generales y especialistas en ortodoncia, endodoncia, periodoncia y cirugía maxilofacial."
+      },
+      {
+        "parrafo": "Disponemos de tecnología avanzada para realizar tratamientos como implantes dentales, rehabilitación oral y estética dental."
+      },
+      {
+        "parrafo": "Ofrecemos atención en guardia externa para urgencias odontológicas como traumatismos dentales, infecciones y dolor agudo."
+      },
+      {
+        "parrafo": "En nuestros consultorios, realizamos controles regulares, tratamientos preventivos y educación en higiene oral."
+      },
+      {
+        "parrafo": "Nuestro objetivo es brindar atención odontológica de calidad, asegurando la salud y bienestar bucal de nuestros pacientes."
+      }
+    ],
+    "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
+    "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/odontologia.jpeg",
+    "servicios": {
+      "urgencias": "Brindamos atención odontológica de urgencia las 24 horas, resolviendo emergencias como dolor intenso, fracturas dentales, infecciones y otros problemas que requieran intervención inmediata.",
+      "consultorios": "Contamos con consultorios equipados para la atención y seguimiento de tratamientos odontológicos preventivos, restauradores y estéticos, incluyendo limpiezas, empastes y ortodoncia.",
+      "cirugia": "Nuestra sala de cirugía está habilitada para realizar procedimientos quirúrgicos odontológicos como extracciones complicadas, implantes dentales y otros tratamientos quirúrgicos mayores.",
+      "equipo_odontologico": "Nuestro equipo está compuesto por odontólogos generales y especialistas en áreas como ortodoncia, endodoncia (tratamientos de conductos) y periodoncia, garantizando un tratamiento integral y personalizado.",
+      "modalidad": "Ofrecemos atención tanto en modalidad presencial como en consultas virtuales para facilitar el acceso a nuestros servicios odontológicos en cualquier momento."
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Servicio de Nutrición",
+    "descripcionCard": "Conoce mas acerca del ",
+    "descripcion": [
+      {
+        "parrafo": "El Servicio de Nutrición de la ClínicaGrupo#3 está dedicado a la evaluación, prevención y tratamiento de enfermedades relacionadas con la alimentación y el metabolismo."
+      },
+      {
+        "parrafo": "Contamos con un equipo de nutricionistas especializados que ofrecen planes de alimentación personalizados según las necesidades de cada paciente."
+      },
+      {
+        "parrafo": "Ofrecemos asesoramiento en nutrición infantil, deportiva, clínica y para el manejo de enfermedades crónicas."
+      },
+      {
+        "parrafo": "Realizamos seguimiento en consultorios externos para garantizar el cumplimiento de los objetivos nutricionales de cada paciente."
+      },
+      {
+        "parrafo": "Brindamos talleres educativos sobre hábitos alimenticios saludables y prevención de enfermedades metabólicas."
+      },
+      {
+        "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestros pacientes a través de una alimentación equilibrada y adaptada a sus necesidades individuales."
+      }
+    ],
+    "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
+    "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/nutricionista.jpeg",
+    "servicios": {
+      "guardia": "Disponemos de atención nutricional de urgencia para pacientes que requieran evaluación inmediata en casos de desnutrición severa, trastornos alimentarios o complicaciones metabólicas.",
+      "consultorios": "Contamos con consultorios especializados donde realizamos evaluaciones nutricionales personalizadas, planes de alimentación adaptados y seguimiento de pacientes con necesidades específicas.",
+      "equipo_medico": "Nuestro equipo está conformado por nutricionistas clínicos y especialistas en diversas áreas como nutrición infantil, deportiva y para enfermedades metabólicas, asegurando un tratamiento integral.",
+      "modalidad": "Ofrecemos consultas presenciales y virtuales para garantizar el acceso a la orientación nutricional desde cualquier lugar."
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Servicio de Neurología",
+    "descripcionCard": "Conoce mas acerca del ",
+    "descripcion": [
+      {
+        "parrafo": "El Servicio de Neurología de la ClínicaGrupo#3 está dedicado a la evaluación, diagnóstico y tratamiento de enfermedades del sistema nervioso central y periférico."
+      },
+      {
+        "parrafo": "Contamos con un equipo de neurólogos especializados en diversas áreas como epilepsia, trastornos neurodegenerativos, y enfermedades cerebrovasculares."
+      },
+      {
+        "parrafo": "Ofrecemos diagnóstico y tratamiento de condiciones como migrañas, esclerosis múltiple, Parkinson, Alzheimer y neuropatías."
+      },
+      {
+        "parrafo": "Realizamos seguimiento en consultorios externos para el manejo de enfermedades crónicas y progresivas, con atención personalizada para cada paciente."
+      },
+      {
+        "parrafo": "Brindamos talleres y programas educativos sobre prevención de enfermedades neurológicas y estrategias para el manejo de trastornos neurológicos."
+      },
+      {
+        "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestros pacientes mediante un diagnóstico temprano y un tratamiento efectivo y especializado."
+      }
+    ],
+    "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
+    "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/neurologia.jpeg",
+    "servicios": {
+      "guardia": "Disponemos de atención neurológica de urgencia para pacientes que requieran evaluación inmediata en casos de accidentes cerebrovasculares, crisis convulsivas, traumatismos craneoencefálicos y otros trastornos neurológicos agudos.",
+      "consultorios": "Contamos con consultorios especializados donde realizamos evaluaciones neurológicas personalizadas, diagnóstico por imágenes y seguimiento de enfermedades neurológicas crónicas y degenerativas.",
+      "equipo_medico": "Nuestro equipo está compuesto por neurólogos generales y especialistas en áreas como neurología infantil, neurocirugía, epilepsia y enfermedades neurodegenerativas, asegurando un tratamiento integral.",
+      "modalidad": "Ofrecemos consultas presenciales y virtuales para garantizar el acceso a la atención neurológica en cualquier momento y lugar."
+    }
+  },
+  {
+    "id": 7,
+    "nombre": "Servicio de Medicina General",
+    "descripcionCard": "Conoce mas acerca del ",
+    "descripcion": [
+      {
+        "parrafo": "El Servicio de Medicina General de la ClínicaGrupo#3 está orientado a la prevención, diagnóstico y tratamiento de enfermedades comunes en pacientes de todas las edades."
+      },
+      {
+        "parrafo": "Contamos con un equipo de médicos generales altamente capacitados para brindar una atención integral y personalizada."
+      },
+      {
+        "parrafo": "Realizamos chequeos médicos periódicos, control de enfermedades crónicas y detección temprana de patologías."
+      },
+      {
+        "parrafo": "Ofrecemos asesoramiento en hábitos saludables, vacunación y manejo de factores de riesgo para prevenir enfermedades."
+      },
+      {
+        "parrafo": "Atendemos tanto en consultorios externos como en modalidad virtual para facilitar el acceso a la salud primaria."
+      },
+      {
+        "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestros pacientes a través de un enfoque preventivo y un tratamiento oportuno."
+      }
+    ],
+    "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
+    "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/medico_gral.jpeg",
+    "servicios": {
+      "guardia": "Disponemos de atención médica de urgencia para la evaluación y tratamiento inmediato de afecciones comunes como infecciones, fiebre alta, hipertensión descontrolada y otras condiciones que requieren asistencia rápida.",
+      "consultorios": "Contamos con consultorios especializados para la atención de enfermedades agudas y crónicas, chequeos médicos, control de presión arterial y asesoramiento en salud preventiva.",
+      "equipo_medico": "Nuestro equipo está compuesto por médicos generales con experiencia en atención primaria y manejo de diversas patologías, asegurando un enfoque integral para cada paciente.",
+      "modalidad": "Ofrecemos consultas presenciales y virtuales para garantizar el acceso a la atención médica en cualquier momento y lugar."
+    }
+  },
+  {
+    "id": 8,
+    "nombre": "Servicio de Ginecología",
+
+    "descripcionCard": "Conoce mas acerca del ",
+    "descripcion": [
+      {
+        "parrafo": "El Servicio de Ginecología de la ClínicaGrupo#3 está dedicado a la salud integral de la mujer, brindando prevención, diagnóstico y tratamiento de enfermedades ginecológicas."
+      },
+      {
+        "parrafo": "Contamos con un equipo de ginecólogos especializados en diversas áreas, incluyendo salud reproductiva, endocrinología ginecológica y oncología ginecológica."
+      },
+      {
+        "parrafo": "Realizamos controles ginecológicos de rutina, seguimiento del embarazo, planificación familiar y detección temprana de patologías como cáncer de cuello uterino y de mama."
+      },
+      {
+        "parrafo": "Ofrecemos tratamientos para trastornos hormonales, síndrome de ovario poliquístico, menopausia y otras condiciones ginecológicas."
+      },
+      {
+        "parrafo": "Brindamos talleres y programas de educación en salud femenina, prevención de enfermedades de transmisión sexual y bienestar reproductivo."
+      },
+      {
+        "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestras pacientes mediante un enfoque integral y personalizado en cada etapa de su vida."
+      }
+    ],
+    "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
+    "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/ginecologia.jpeg",
+    "servicios": {
+      "guardia": "Disponemos de atención ginecológica de urgencia para pacientes que requieran evaluación inmediata en casos de hemorragias anormales, dolor pélvico agudo, infecciones graves o complicaciones obstétricas.",
+      "consultorios": "Contamos con consultorios especializados para chequeos ginecológicos, ecografías, colposcopias, planificación familiar y seguimiento de embarazos.",
+      "equipo_medico": "Nuestro equipo está compuesto por ginecólogos y obstetras con experiencia en atención primaria y especializada, asegurando un tratamiento integral y de alta calidad.",
+      "modalidad": "Ofrecemos consultas presenciales y virtuales para garantizar el acceso a la atención ginecológica en cualquier momento y lugar."
+    }
+  },
+  {
+    "id": 9,
+    "nombre": "Servicio de Dermatología",
+
+    "descripcionCard": "Conoce mas acerca del ",
+    "descripcion": [
+      {
+        "parrafo": "El Servicio de Dermatología de la ClínicaGrupo#3 está dedicado al diagnóstico, tratamiento y prevención de enfermedades de la piel, cabello y uñas."
+      },
+      {
+        "parrafo": "Contamos con un equipo de dermatólogos especializados en diversas áreas, incluyendo dermatología clínica, estética y oncológica."
+      },
+      {
+        "parrafo": "Ofrecemos tratamiento para afecciones como acné, psoriasis, dermatitis, rosácea y enfermedades autoinmunes de la piel."
+      },
+      {
+        "parrafo": "Realizamos detección temprana y tratamiento de cáncer de piel, así como procedimientos de dermatoscopia y biopsias cutáneas."
+      },
+      {
+        "parrafo": "Brindamos asesoramiento en el cuidado de la piel, prevención del envejecimiento y tratamientos estéticos como peeling químico, láser y rejuvenecimiento facial."
+      },
+      {
+        "parrafo": "Nuestro objetivo es mejorar la salud y apariencia de la piel de nuestros pacientes a través de un enfoque integral y personalizado."
+      }
+    ],
+    "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
+    "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/dermatologia.jpeg",
+    "servicios": {
+      "guardia": "Disponemos de atención dermatológica de urgencia para pacientes que requieran evaluación inmediata en casos de reacciones alérgicas graves, infecciones severas o quemaduras extensas.",
+      "consultorios": "Contamos con consultorios especializados para la atención de enfermedades de la piel, evaluaciones estéticas, procedimientos dermatológicos y control de lunares.",
+      "equipo_medico": "Nuestro equipo está compuesto por dermatólogos con experiencia en dermatología clínica, estética y oncológica, asegurando un tratamiento completo y de calidad.",
+      "modalidad": "Ofrecemos consultas presenciales y virtuales para garantizar el acceso a la atención dermatológica en cualquier momento y lugar."
+    }
+  },
+  {
+    "id": 10,
+    "nombre": "Servicio de Cardiología",
+
+    "descripcionCard": "Conoce mas acerca del ",
+    "descripcion": [
+      {
+        "parrafo": "El Servicio de Cardiología de la ClínicaGrupo#3 está dedicado al diagnóstico, tratamiento y prevención de enfermedades cardiovasculares en pacientes de todas las edades."
+      },
+      {
+        "parrafo": "Contamos con un equipo de cardiólogos especializados en áreas como cardiología preventiva, insuficiencia cardíaca, arritmias y cardiología intervencionista."
+      },
+      {
+        "parrafo": "Realizamos chequeos cardiológicos, control de hipertensión arterial, manejo de colesterol y prevención de enfermedades del corazón."
+      },
+      {
+        "parrafo": "Ofrecemos estudios especializados como electrocardiogramas, ecocardiogramas, pruebas de esfuerzo y monitoreo Holter."
+      },
+      {
+        "parrafo": "Brindamos asesoramiento en hábitos saludables para reducir factores de riesgo y mejorar la salud cardiovascular a largo plazo."
+      },
+      {
+        "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestros pacientes a través de un diagnóstico temprano y un tratamiento integral y personalizado."
+      }
+    ],
+    "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
+    "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/cardiologia.jpeg",
+    "servicios": {
+      "guardia": "Disponemos de atención cardiológica de urgencia para pacientes que requieran evaluación inmediata en casos de dolor torácico, arritmias graves, insuficiencia cardíaca descompensada o crisis hipertensivas.",
+      "consultorios": "Contamos con consultorios especializados para chequeos preventivos, seguimiento de enfermedades cardíacas crónicas y estudios diagnósticos avanzados.",
+      "equipo_medico": "Nuestro equipo está compuesto por cardiólogos generales y especialistas en distintas áreas de la cardiología, asegurando un tratamiento integral y de alta calidad.",
+      "modalidad": "Ofrecemos consultas presenciales y virtuales para garantizar el acceso a la atención cardiológica en cualquier momento y lugar."
+    }
+  }
+]
