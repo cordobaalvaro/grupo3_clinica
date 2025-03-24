@@ -1,5 +1,5 @@
 import NavVisitante from "../navbarComponents/NavVisitante";
-import NavUsuario from "../NavbarComponents/NavUsuario";
+import NavUsuario from "../navbarComponents/NavUsuario";
 import NavAdministrador from "../navbarComponents/NavAdministrador";
 import { useRegisterForm } from "../../../hooks/useRegisterForm";
 
