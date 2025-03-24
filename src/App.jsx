@@ -9,6 +9,7 @@ import SpecialistDetailsPage from "./page/SpecialistDetailsPage";
 import NavbarPage from "./components/layout/navbarComponent/NavbarIdPage";
 import FooterC from "./components/layout/FooterComponent/FooterC";
 import "./App.css";
+import HomePage from './page/HomePage';
 
 function App() {
   return (
