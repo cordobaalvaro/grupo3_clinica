@@ -38,6 +38,16 @@ export const useRegisterForm = () => {
     
     if (Object.keys(nuevosErrores).length === 0) {
       if (usuarioExistente) {
+        // Marcar como logueado
+        usuarioExistente.login = true;
+        // Actualizar la lista de usuarios en localStorage
+        const usuariosActualizados = usuariosLs.map(user =>
+          user.id === usuarioExistente.id ? usuarioExistente : user
+        );
+        localStorage.setItem("usuarios", JSON.stringify(usuariosActualizados));
+        // Guardar el usuario logueado en sessionStorage
+        sessionStorage.setItem("usuarioLogueado", JSON.stringify(usuarioExistente));
+
           if (usuarioExistente.rol === 'usuario') {
             setTimeout(() => {
               navigate('/pagina-de-usuario')

@@ -29,10 +29,10 @@ const NavVisitante = () => {
               </NavLink>
             </Nav>
             <Nav className='ms-auto'>
-              <NavLink className={"nav-link"} to='/'>
+              <NavLink className={"nav-link"} to='/inicio-de-sesion'>
                 Iniciar sesión
               </NavLink>
-              <NavLink className={"nav-link"} to='/'>
+              <NavLink className={"nav-link"} to='/pagina-registro'>
                 Registarse
               </NavLink>
             </Nav>

@@ -14,10 +14,10 @@ const HomePage = () => {
         idCarousel="carouselhome"
         carouselReutilizable={imagenesCarouselFormulario}
       />
-        <Container>
-          <Row>
+      <Container>
+        <Row className="mt-3 d-flex justify-content-center">
             { especialistasApi.map((especialista, index) => (
-              <Col md={4} className="mb-4" key={index}>
+              <Col xs={12} sm={12} md={6} lg={4} xl={4} xxl={3} className="mb-3" key={index}>
                 <SpecialistComponent
                   imagePerfil={especialista.imagePerfil}
                   nombre={especialista.nombre}

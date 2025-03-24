@@ -9,11 +9,13 @@ import SpecialistPage from "./page/SpecialistPage";
 import LoginForm from "./components/forms/LoginForm";
 import AdminPage from "./page/AdminPage";
 import UserPage from "./page/UserPage";
+import TurnUser from "./page/TurnUser";
+import TurnSpecialist from "./page/TurnSpecialist";
 
 function App() {
   return (
     <Router>
-      <NavbarPage idPage='administrador' />
+      <NavbarPage idPage='visitante' />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/inicio-de-sesion' element={<LoginForm />} />
@@ -21,6 +23,8 @@ function App() {
         <Route path='/pagina-de-administrador' element={<AdminPage />} />
         <Route path='/pagina-registro' element={<RegisterPage />} />
         <Route path='/detalle-especialista/:nombre' element={<SpecialistDetailsPage />} />
+        <Route path='/turno-especialistas/:id' element={<TurnUser />} />
+        <Route path='/turnos-usuarios/:id' element={<TurnSpecialist />} />
         <Route path='/pagina-especialista' element={<SpecialistPage />} />
       </Routes>
     </Router>
