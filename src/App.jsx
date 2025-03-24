@@ -8,6 +8,10 @@ import LoginForm from "./components/forms/LoginForm";
 import SpecialistDetailsPage from "./page/SpecialistDetailsPage";
 import NavbarPage from "./components/layout/navbarComponent/NavbarIdPage";
 import FooterC from "./components/layout/FooterComponent/FooterC";
+import TurnSpecialist from "./page/TurnSpecialist";
+import TurnUser from "./page/TurnUser";
+import Eror404 from "./page/Eror404";
+
 import "./App.css";
 
 function App() {
@@ -17,14 +21,14 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/pagina-registro" element={<RegisterPage />} />
-        <Route
-          path="/detalle-especialista/:nombre"
-          element={<SpecialistDetailsPage />}
-        />
+        <Route path="/detalle-especialista/:nombre" element={<SpecialistDetailsPage />} />
+        <Route path="/turnos-especialidades/:nombre" element={<TurnUser />} />
+        <Route path="/turnos-usuarios/:id" element={<TurnSpecialist />} />
         <Route path="/pagina-especialista" element={<SpecialistPage />} />
         <Route path="/inicio-de-sesion" element={<LoginForm />} />
         <Route path="/pagina-de-usuario" element={<UserPage />} />
         <Route path="/pagina-de-administrador" element={<AdminPage />} />
+        <Route path="/*" element={<Eror404 />} />
       </Routes>
       <FooterC />
     </Router>
