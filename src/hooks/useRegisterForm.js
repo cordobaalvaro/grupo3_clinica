@@ -113,6 +113,7 @@ export const useRegisterForm = () => {
       setErrores(nuevosErrores, noCoinciden);
     }
   };
+
   const handleLogoutUser = () => {
     const usuariosLs = JSON.parse(localStorage.getItem("usuarios")) || [];
     const usuarioLogueado = JSON.parse(sessionStorage.getItem("usuarioLogueado"));
@@ -138,6 +139,7 @@ export const useRegisterForm = () => {
       navigate("/");
     }, 500);
   };
+  
   const labels = {
     nameUser: "Nombre y Apellido",
     emailUser: "Correo Electrónico",
