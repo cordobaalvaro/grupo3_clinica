@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import { Card, Col, Container, Row, Form, Button } from 'react-bootstrap';
-import Swal from 'sweetalert2'; // Asegúrate de que `Swal` esté importado
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { Card, Col, Container, Row, Form, Button } from "react-bootstrap";
+import Swal from "sweetalert2"; // Asegúrate de que `Swal` esté importado
 
-import especialistasData from '../database/apiServicios.json';
+import especialistasData from "../database/apiServicios.json";
 
 const TurnUser = () => {
   const { nombre } = useParams();
@@ -17,13 +17,15 @@ const TurnUser = () => {
 
   const nombreFormateado = nombre.replace(/_/g, " ");
 
-  const usuarioLs = JSON.parse(localStorage.getItem('usuarios')) || [];
+  const usuarioLs = JSON.parse(localStorage.getItem("usuarios")) || [];
   // Asegúrate de que hay un usuario logueado
-  const usuarioLogueado = usuarioLs.length > 0 ? usuarioLs[0] : null; 
+  const usuarioLogueado = usuarioLs.length > 0 ? usuarioLs[0] : null;
 
   useEffect(() => {
     const obtenerEspecialista = () => {
-      const encontrado = especialistasData.find((esp) => esp.nombre === nombreFormateado);
+      const encontrado = especialistasData.find(
+        (esp) => esp.nombre === nombreFormateado
+      );
       setTrunoEspecialista(encontrado || null);
     };
 
@@ -53,7 +55,9 @@ const TurnUser = () => {
     const nuevoTurno = {
       id: usuarioLogueado ? usuarioLogueado.id : "usuario no encontrado",
       medico: turnoEspecialista.medicos[0].nombreMedico, // Puedes reemplazar esto con el nombre real
-      paciente: usuarioLogueado ? usuarioLogueado.nameUser : "Usuario no encontrado", // Nombre del usuario logueado o un mensaje de error si no está,
+      paciente: usuarioLogueado
+        ? usuarioLogueado.nameUser
+        : "Usuario no encontrado", // Nombre del usuario logueado o un mensaje de error si no está,
       especialidad: turnoEspecialista.nombre,
       fechaturno: fechaturno,
       horaturno: horaturno,
@@ -76,7 +80,8 @@ const TurnUser = () => {
     // Filtramos los turnos ocupados
     const turnosOcupados = listadeturnos.filter(
       (turno) =>
-        turno.fechaturno === nuevaFecha && turno.especialidad === turnoEspecialista.nombre
+        turno.fechaturno === nuevaFecha &&
+        turno.especialidad === turnoEspecialista.nombre
     );
 
     setUsados(turnosOcupados);
@@ -105,8 +110,12 @@ const TurnUser = () => {
                   marginBottom: "10px",
                 }}
               />
-              <Card.Title>Especialidad:&nbsp;{turnoEspecialista.nombre}</Card.Title>
-              <Card.Text>Profesional:&nbsp;{turnoEspecialista.medicos[0].nombreMedico}</Card.Text>
+              <Card.Title>
+                Especialidad:&nbsp;{turnoEspecialista.nombre}
+              </Card.Title>
+              <Card.Text>
+                Profesional:&nbsp;{turnoEspecialista.medicos[0].nombreMedico}
+              </Card.Text>
               <hr />
               <Form.Group className="mb-3">
                 <Form.Label>Fecha Turno</Form.Label>
