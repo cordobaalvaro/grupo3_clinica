@@ -11,18 +11,19 @@ const HomePage = () => {
   return (
     <>
       <CarouselComponent
-        idCarousel='carouselhome'
+        idCarousel="carouselhome"
         carouselReutilizable={imagenesCarouselFormulario}
       />
       <Container>
         <Row>
           {especialistasApi.map((especialista, index) => (
-            <Col md={4} className='mb-4' key={index}>
+            <Col md={4} className="mb-4" key={index}>
               <SpecialistComponent
                 imagePerfil={especialista.imagePerfil}
                 nombre={especialista.nombre}
                 description={especialista.descripcionCard}
                 idEspecialist={especialista.nombre}
+                idTurno={especialista.nombre}
               />
             </Col>
           ))}

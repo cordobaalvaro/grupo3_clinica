@@ -8,6 +8,7 @@ const SpecialistComponent = ({
   nombre,
   description,
   idEspecialist,
+  idTurno,
 }) => {
   return (
     <>
@@ -35,10 +36,7 @@ const SpecialistComponent = ({
           >
             Ver más
           </Link>
-          <Link
-            to={`/detalle-especialista/${idEspecialist.replace(/ /g, "_")}`}
-            className="btn btn-success"
-          >
+          <Link to={`/pagina-de-turnos/${idTurno}`} className="btn btn-success">
             Turno
           </Link>
         </Card.Body>
