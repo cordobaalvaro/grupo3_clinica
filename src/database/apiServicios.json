@@ -1,7 +1,9 @@
 [
   {
     "id": 1,
+    "titulo": "Quieres saber más?",
     "nombre": "Servicio de Traumatología",
+    "servicioDe":"para Traumatología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -40,7 +42,9 @@
   },
   {
     "id": 2,
+    "titulo": "Quieres saber más?",
     "nombre": "Servicio de Psicología",
+    "servicioDe":"para Psicología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -79,7 +83,9 @@
   },
   {
     "id": 3,
+    "titulo": "Quieres saber más?",
     "nombre": "Servicio de Pediatría",
+    "servicioDe":"para Pediatría",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -119,7 +125,9 @@
   },
   {
     "id": 4,
+    "titulo": "Quieres saber más?",
     "nombre": "Servicio de Odontología",
+    "servicioDe":"para Odontología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -159,7 +167,9 @@
   },
   {
     "id": 5,
+    "titulo": "Quieres saber más?",
     "nombre": "Servicio de Nutrición",
+    "servicioDe":"para Nutrición",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -198,7 +208,9 @@
   },
   {
     "id": 6,
+    "titulo": "Quieres saber más?",
     "nombre": "Servicio de Neurología",
+    "servicioDe":"para Neurología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -237,7 +249,9 @@
   },
   {
     "id": 7,
+    "titulo": "Quieres saber más?",
     "nombre": "Servicio de Medicina General",
+    "servicioDe":"Medicina General",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -276,8 +290,9 @@
   },
   {
     "id": 8,
+    "titulo": "Quieres saber más?",
     "nombre": "Servicio de Ginecología",
-
+    "servicioDe":"para Ginecología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -316,8 +331,9 @@
   },
   {
     "id": 9,
+    "titulo": "Quieres saber más?",
     "nombre": "Servicio de Dermatología",
-
+    "servicioDe":"para Dermatología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -356,8 +372,9 @@
   },
   {
     "id": 10,
+    "titulo": "Quieres saber más?",
     "nombre": "Servicio de Cardiología",
-
+    "servicioDe":"para Cardiología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
