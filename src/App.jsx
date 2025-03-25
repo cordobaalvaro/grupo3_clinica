@@ -13,18 +13,26 @@ import TurnUser from "./page/TurnUser";
 import Eror404 from "./page/Eror404";
 
 import "./App.css";
+import MedicalAppointment from "./page/MedicalAppointment";
 
 function App() {
   return (
     <Router>
-      <NavbarPage/>
+      <NavbarPage />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/pagina-registro" element={<RegisterPage />} />
-        <Route path="/detalle-especialista/:nombre" element={<SpecialistDetailsPage />} />
+        <Route
+          path="/detalle-especialista/:nombre"
+          element={<SpecialistDetailsPage />}
+        />
         <Route path="/turnos-especialidades/:nombre" element={<TurnUser />} />
         <Route path="/turnos-usuarios/:id" element={<TurnSpecialist />} />
         <Route path="/pagina-especialista" element={<SpecialistPage />} />
+        <Route
+          path="/pagina-de-turnos/:nombre"
+          element={<MedicalAppointment />}
+        />
         <Route path="/inicio-de-sesion" element={<LoginForm />} />
         <Route path="/pagina-de-usuario" element={<UserPage />} />
         <Route path="/pagina-de-administrador" element={<AdminPage />} />

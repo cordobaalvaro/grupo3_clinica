@@ -23,6 +23,7 @@ const HomePage = () => {
                 nombre={especialista.nombre}
                 description={especialista.descripcionCard}
                 idEspecialist={especialista.nombre}
+                idTurno={especialista.nombre}
               />
             </Col>
           ))}
