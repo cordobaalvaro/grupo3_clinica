@@ -33,7 +33,7 @@ const SpecialistComponent = ({
             to={`/detalle-especialista/${idEspecialist.replace(/ /g, "_")}`}
             className="btn btn-primary"
           >
-            Turno
+            Ver más
           </Link>
         </Card.Body>
       </Card>
