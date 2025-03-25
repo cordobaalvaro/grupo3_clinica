@@ -1,9 +1,22 @@
+import React from "react";
 import { Navigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const RutasProtegidas = ({ children }) => {
   const usuarioLogueado = JSON.parse(sessionStorage.getItem("usuarioLogueado"));
-  return usuarioLogueado ? children : <Navigate to="/inicio-de-sesion" />;
-}
 
-export default RutasProtegidas
+  if (!usuarioLogueado) {
+    Swal.fire({
+      title: "Acceso restringido",
+      text: "Debes iniciar sesión para acceder a esta página.",
+      icon: "warning",
+      confirmButtonText: "OK"
+    });
 
+    return <Navigate to="/inicio-de-sesion" />;
+  }
+
+  return children;
+};
+
+export default RutasProtegidas;
