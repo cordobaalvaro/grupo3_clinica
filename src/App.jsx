@@ -11,9 +11,11 @@ import FooterC from "./components/layout/FooterComponent/FooterC";
 import TurnSpecialist from "./page/TurnSpecialist";
 import TurnUser from "./page/TurnUser";
 import Eror404 from "./page/Eror404";
-
-import "./App.css";
 import MedicalAppointment from "./page/MedicalAppointment";
+import MakeAppointment from "./page/MakeAppointment";
+
+import RutaProtegida from './utils/RutasProtegidas'
+import "./App.css";
 
 function App() {
   return (
@@ -21,21 +23,18 @@ function App() {
       <NavbarPage />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/pagina-registro" element={<RegisterPage />} />
-        <Route
-          path="/detalle-especialista/:nombre"
-          element={<SpecialistDetailsPage />}
-        />
-        <Route path="/turnos-especialidades/:nombre" element={<TurnUser />} />
-        <Route path="/turnos-usuarios/:id" element={<TurnSpecialist />} />
-        <Route path="/pagina-especialista" element={<SpecialistPage />} />
-        <Route
-          path="/pagina-de-turnos/:nombre"
-          element={<MedicalAppointment />}
-        />
         <Route path="/inicio-de-sesion" element={<LoginForm />} />
-        <Route path="/pagina-de-usuario" element={<UserPage />} />
-        <Route path="/pagina-de-administrador" element={<AdminPage />} />
+        <Route path="/pagina-registro" element={<RegisterPage />} />
+        <Route path="/detalle-especialista/:nombre" element={<SpecialistDetailsPage />} />
+        
+        <Route path="/pagina-de-usuario" element={<RutaProtegida><UserPage /></RutaProtegida>} />
+        <Route path="/pagina-de-administrador" element={<RutaProtegida><AdminPage /></RutaProtegida>} />
+        <Route path="/pagina-de-turnos/" element={<RutaProtegida><MakeAppointment /></RutaProtegida>} />
+        <Route path="/pagina-especialista" element={<RutaProtegida><SpecialistPage /></RutaProtegida>} />
+        <Route path="/turnos-usuarios/:id" element={<RutaProtegida><TurnSpecialist /></RutaProtegida>} />
+        <Route path="/turnos-especialidades/:nombre" element={<RutaProtegida><TurnUser /></RutaProtegida>} />
+        <Route path="/pagina-de-turnos/:nombre" element={<RutaProtegida><MedicalAppointment /></RutaProtegida>} />
+        
         <Route path="/*" element={<Eror404 />} />
       </Routes>
       <FooterC />

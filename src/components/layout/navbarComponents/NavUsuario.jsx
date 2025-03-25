@@ -27,6 +27,9 @@ const NavUsuario = () => {
               <NavLink className={"nav-link"} to='/'>
                 Contacto
               </NavLink>
+              <NavLink className={"nav-link"} to='/pagina-de-turnos'>
+                Sacar Turno
+              </NavLink>
             </Nav>
             <Nav className='ms-auto'>
               <NavLink className={"nav-link"} to='/'>

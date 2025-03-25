@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
-import { Link, Links, NavLink, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import especialistasData from '../database/apiServicios.json'
-import { Button, Card, CardBody, Col, Container, Row } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 
 const SpecialistDetailsPage = () => {
   const { nombre } = useParams();
   const nombreFormateado = nombre.replace(/_/g, " ");
-  const [especialista, setEspecialista] = useState(null);
+  document.title = nombreFormateado
 
+  const [especialista, setEspecialista] = useState(null);
+  
   useEffect(() => {
     const obtenerEspecialista = () => {
       const encontrado = especialistasData.find((esp) => esp.nombre === nombreFormateado);
