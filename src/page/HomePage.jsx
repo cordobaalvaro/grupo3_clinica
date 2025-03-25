@@ -4,7 +4,6 @@ import CarouselComponent from "../components/ui/CarouselComponent";
 import SpecialistComponent from "../components/layout/specialistComponent/SpecialistComponent";
 import ContactComponent from "../components/layout/contactComponent/ContactComponent";
 
-import { imagenesCarouselFormulario } from "../database/imagenesServidor";
 import especialistasApi from "../database/apiServicios.json";
 
 const HomePage = () => {
@@ -12,7 +11,7 @@ const HomePage = () => {
     <>
       <CarouselComponent
         idCarousel="carouselhome"
-        carouselReutilizable={imagenesCarouselFormulario}
+        carouselReutilizable={especialistasApi}
       />
       <Container>
         <Row>

@@ -30,6 +30,7 @@
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/traumatologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Traumatologia.jpg",
     "servicios": {
       "guardia": "Disponemos de atención permanente en guardia externa e internación para atender urgencias traumatológicas, apoyados en estudios por imágenes de alta complejidad y un equipo de especialistas de guardia.",
       "consultorios": "Contamos con consultorios especializados para el seguimiento de pacientes con patologías traumatológicas, lesiones deportivas y enfermedades articulares. El seguimiento se realiza con traumatólogos de cabecera y especialistas en ortopedia.",
@@ -68,6 +69,7 @@
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/psicologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Psicologia.jpg",
     "servicios": {
       "guardia": "Disponemos de atención psicológica de urgencia para pacientes que requieran asistencia inmediata en situaciones de crisis emocionales, ataques de ansiedad o estrés severo.",
       "consultorios": "Contamos con consultorios especializados en terapia individual, terapia familiar y terapia infantil, atendiendo problemáticas como ansiedad, depresión, trastornos de la conducta y orientación vocacional.",
@@ -106,6 +108,7 @@
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/pediatria.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Pediatria.jpg",
     "servicios": {
       "guardia": "Disponemos de atención pediátrica de urgencia las 24 horas, brindando asistencia inmediata para enfermedades agudas, traumatismos y otras emergencias infantiles.",
       "consultorios": "Contamos con consultorios especializados para el seguimiento del crecimiento y desarrollo infantil, atención de patologías crónicas y vacunaciones.",
@@ -145,6 +148,7 @@
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/odontologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/odontologia.jpg",
     "servicios": {
       "urgencias": "Brindamos atención odontológica de urgencia las 24 horas, resolviendo emergencias como dolor intenso, fracturas dentales, infecciones y otros problemas que requieran intervención inmediata.",
       "consultorios": "Contamos con consultorios equipados para la atención y seguimiento de tratamientos odontológicos preventivos, restauradores y estéticos, incluyendo limpiezas, empastes y ortodoncia.",
@@ -184,6 +188,7 @@
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/nutricionista.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Nutricionista.jpg",
     "servicios": {
       "guardia": "Disponemos de atención nutricional de urgencia para pacientes que requieran evaluación inmediata en casos de desnutrición severa, trastornos alimentarios o complicaciones metabólicas.",
       "consultorios": "Contamos con consultorios especializados donde realizamos evaluaciones nutricionales personalizadas, planes de alimentación adaptados y seguimiento de pacientes con necesidades específicas.",
@@ -222,6 +227,7 @@
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/neurologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Neurologia.jpg",
     "servicios": {
       "guardia": "Disponemos de atención neurológica de urgencia para pacientes que requieran evaluación inmediata en casos de accidentes cerebrovasculares, crisis convulsivas, traumatismos craneoencefálicos y otros trastornos neurológicos agudos.",
       "consultorios": "Contamos con consultorios especializados donde realizamos evaluaciones neurológicas personalizadas, diagnóstico por imágenes y seguimiento de enfermedades neurológicas crónicas y degenerativas.",
@@ -260,6 +266,7 @@
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/medico_gral.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Medico_General.jpg",
     "servicios": {
       "guardia": "Disponemos de atención médica de urgencia para la evaluación y tratamiento inmediato de afecciones comunes como infecciones, fiebre alta, hipertensión descontrolada y otras condiciones que requieren asistencia rápida.",
       "consultorios": "Contamos con consultorios especializados para la atención de enfermedades agudas y crónicas, chequeos médicos, control de presión arterial y asesoramiento en salud preventiva.",
@@ -299,6 +306,7 @@
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/ginecologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Ginecologia.jpg",
     "servicios": {
       "guardia": "Disponemos de atención ginecológica de urgencia para pacientes que requieran evaluación inmediata en casos de hemorragias anormales, dolor pélvico agudo, infecciones graves o complicaciones obstétricas.",
       "consultorios": "Contamos con consultorios especializados para chequeos ginecológicos, ecografías, colposcopias, planificación familiar y seguimiento de embarazos.",
@@ -338,6 +346,7 @@
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/dermatologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Dermatologia.jpg",
     "servicios": {
       "guardia": "Disponemos de atención dermatológica de urgencia para pacientes que requieran evaluación inmediata en casos de reacciones alérgicas graves, infecciones severas o quemaduras extensas.",
       "consultorios": "Contamos con consultorios especializados para la atención de enfermedades de la piel, evaluaciones estéticas, procedimientos dermatológicos y control de lunares.",
@@ -377,6 +386,7 @@
     ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/cardiologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Cardiologia.jpg",
     "servicios": {
       "guardia": "Disponemos de atención cardiológica de urgencia para pacientes que requieran evaluación inmediata en casos de dolor torácico, arritmias graves, insuficiencia cardíaca descompensada o crisis hipertensivas.",
       "consultorios": "Contamos con consultorios especializados para chequeos preventivos, seguimiento de enfermedades cardíacas crónicas y estudios diagnósticos avanzados.",
