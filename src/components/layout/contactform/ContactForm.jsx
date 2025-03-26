@@ -14,6 +14,7 @@ const ContactFormHomePage = ({ idPage }) => {
     mensaje: "",
     cv: "",
   });
+  const usuarioLogueado = JSON.parse(sessionStorage.getItem("usuarioLogueado"));
 
   // Array con los números de WhatsApp
   const phoneNumbers = ["5491166582695", "5493815376390", "5493816563131"]; // Agrega más números si es necesario
@@ -44,9 +45,16 @@ const ContactFormHomePage = ({ idPage }) => {
           cv: "",
         });
       } else {
-        const { nombre, telefono, correo, especialidad, mensaje } = formData;
-        const link = "http://localhost:5173/pagina-de-administrador";
-        const message = `*_Hola soy_* ${nombre}, 
+       const { nombre, telefono, correo, especialidad, mensaje } = formData;
+    const link = "http://localhost:5173/pagina-de-administrador";
+    const message = usuarioLogueado
+      ? `*_Hola soy_* ${usuarioLogueado.nameUser}, 
+📞 Teléfono: ${usuarioLogueado.phoneUser}
+✉️ Correo: ${usuarioLogueado.emailUser}
+📌 Especialidad: ${especialidad}
+    Link: <${link}>
+📝 Mensaje: ${mensaje}`
+      : `*_Hola soy_* ${nombre}, 
 📞 Teléfono: ${telefono}
 ✉️ Correo: ${correo}
 📌 Especialidad: ${especialidad}
@@ -83,41 +91,54 @@ const ContactFormHomePage = ({ idPage }) => {
                 : "Contáctanos y empieza a cuidar tu salud"}
             </h1>
             <Form onSubmit={handleSubmit}>
-              <Form.Group className="mb-3" controlId="formNombre">
-                <Form.Label className="text-muted">NOMBRE</Form.Label>
+              <Form.Group className='mb-3' controlId='formNombre'>
+                <Form.Label className='text-muted'>NOMBRE</Form.Label>
                 <Form.Control
-                  type="text"
-                  name="nombre"
-                  value={formData.nombre}
+                  type='text'
+                  name='nombre'
+                  value={
+                    usuarioLogueado ? usuarioLogueado.nameUser : formData.nombre
+                  }
                   onChange={handleChange}
-                  placeholder="Escribe tu nombre."
+                  placeholder='Escribe tu nombre.'
                   required
+                  disabled={!!usuarioLogueado}
                 />
               </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formTelefono">
-                <Form.Label className="text-muted">TELÉFONO</Form.Label>
+              <Form.Group className='mb-3' controlId='formTelefono'>
+                <Form.Label className='text-muted'>TELÉFONO</Form.Label>
                 <Form.Control
-                  type="text"
-                  name="telefono"
-                  value={formData.telefono}
+                  type='text'
+                  name='telefono'
+                  value={
+                    usuarioLogueado
+                      ? usuarioLogueado.phoneUser
+                      : formData.telefono
+                  }
                   onChange={handleChange}
-                  placeholder="Escribe tu teléfono."
+                  placeholder='Escribe tu teléfono.'
                   required
+                  disabled={!!usuarioLogueado}
                 />
               </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formCorreo">
-                <Form.Label className="text-muted">
+              <Form.Group className='mb-3' controlId='formCorreo'>
+                <Form.Label className='text-muted'>
                   CORREO ELECTRÓNICO
                 </Form.Label>
                 <Form.Control
-                  type="email"
-                  name="correo"
-                  value={formData.correo}
+                  type='email'
+                  name='correo'
+                  value={
+                    usuarioLogueado
+                      ? usuarioLogueado.emailUser
+                      : formData.correo
+                  }
                   onChange={handleChange}
-                  placeholder="Escribe tu correo electrónico."
+                  placeholder='Escribe tu correo electrónico.'
                   required
+                  disabled={!!usuarioLogueado}
                 />
               </Form.Group>
 
