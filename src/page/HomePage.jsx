@@ -4,18 +4,19 @@ import CarouselComponent from "../components/ui/CarouselComponent";
 import SpecialistComponent from "../components/layout/specialistComponent/SpecialistComponent";
 import ContactPage from "../components/layout/contactComponent/ContactComponent";
 
-import { imagenesCarouselFormulario } from "../database/imagenesServidor";
 import especialistasApi from "../database/apiServicios.json";
+import ContactComponent from "../components/layout/contactComponent/ContactComponent";
+import SobreNosotrosComponent from "../components/layout/sobreNosotros/SobreNosotrosComponent";
 
 const HomePage = () => {
   return (
     <>
       <CarouselComponent
         idCarousel="carouselhome"
-        carouselReutilizable={imagenesCarouselFormulario}
+        carouselReutilizable={especialistasApi}
       />
       <Container>
-        <Row>
+        <Row className="mt-5">
           {especialistasApi.map((especialista, index) => (
             <Col md={4} className="mb-4" key={index}>
               <SpecialistComponent
@@ -23,11 +24,14 @@ const HomePage = () => {
                 nombre={especialista.nombre}
                 description={especialista.descripcionCard}
                 idEspecialist={especialista.nombre}
+                idTurno={especialista.nombre}
               />
             </Col>
           ))}
         </Row>
       </Container>
+      <SobreNosotrosComponent />
+      <ContactComponent />
     </>
   );
 };

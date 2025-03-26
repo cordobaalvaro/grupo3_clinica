@@ -1,7 +1,10 @@
 [
   {
     "id": 1,
+    "titulo": "Quieres saber más?",
+    "nameMedico": "Rodrigo",
     "nombre": "Servicio de Traumatología",
+    "servicioDe": "para Traumatología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -23,8 +26,14 @@
         "parrafo": "Nuestro compromiso es brindar una atención de excelencia, adaptándonos a las necesidades de cada paciente, promoviendo su bienestar y recuperación mediante un equipo de traumatólogos, ortopedistas y kinesiólogos especializados."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": "Nahuel Jimenez"
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/traumatologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Traumatologia.jpg",
     "servicios": {
       "guardia": "Disponemos de atención permanente en guardia externa e internación para atender urgencias traumatológicas, apoyados en estudios por imágenes de alta complejidad y un equipo de especialistas de guardia.",
       "consultorios": "Contamos con consultorios especializados para el seguimiento de pacientes con patologías traumatológicas, lesiones deportivas y enfermedades articulares. El seguimiento se realiza con traumatólogos de cabecera y especialistas en ortopedia.",
@@ -34,7 +43,10 @@
   },
   {
     "id": 2,
+    "titulo": "Quieres saber más?",
+    "nameMedico": "Rodrigo",
     "nombre": "Servicio de Psicología",
+    "servicioDe": "para Psicología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -56,8 +68,14 @@
         "parrafo": "Nuestro compromiso es acompañar a cada persona en su proceso de bienestar emocional, proporcionando un ambiente de confianza y seguridad, donde puedan sentirse escuchados y comprendidos por un equipo altamente calificado."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": "Rodrigo CasaGrande"
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/psicologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Psicologia.jpg",
     "servicios": {
       "guardia": "Disponemos de atención psicológica de urgencia para pacientes que requieran asistencia inmediata en situaciones de crisis emocionales, ataques de ansiedad o estrés severo.",
       "consultorios": "Contamos con consultorios especializados en terapia individual, terapia familiar y terapia infantil, atendiendo problemáticas como ansiedad, depresión, trastornos de la conducta y orientación vocacional.",
@@ -67,7 +85,10 @@
   },
   {
     "id": 3,
+    "titulo": "Quieres saber más?",
+    "nameMedico": "Rodrigo",
     "nombre": "Servicio de Pediatría",
+    "servicioDe": "para Pediatría",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -89,8 +110,14 @@
         "parrafo": "Nuestro compromiso es ofrecer un entorno seguro y acogedor donde los niños y sus familias se sientan respaldados en todo momento."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": ""
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/pediatria.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Pediatria.jpg",
     "servicios": {
       "guardia": "Disponemos de atención pediátrica de urgencia las 24 horas, brindando asistencia inmediata para enfermedades agudas, traumatismos y otras emergencias infantiles.",
       "consultorios": "Contamos con consultorios especializados para el seguimiento del crecimiento y desarrollo infantil, atención de patologías crónicas y vacunaciones.",
@@ -101,7 +128,10 @@
   },
   {
     "id": 4,
+    "titulo": "Quieres saber más?",
+    "nameMedico": "Rodrigo",
     "nombre": "Servicio de Odontología",
+    "servicioDe": "para Odontología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -123,8 +153,14 @@
         "parrafo": "Nuestro objetivo es brindar atención odontológica de calidad, asegurando la salud y bienestar bucal de nuestros pacientes."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": ""
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/odontologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/odontologia.jpg",
     "servicios": {
       "urgencias": "Brindamos atención odontológica de urgencia las 24 horas, resolviendo emergencias como dolor intenso, fracturas dentales, infecciones y otros problemas que requieran intervención inmediata.",
       "consultorios": "Contamos con consultorios equipados para la atención y seguimiento de tratamientos odontológicos preventivos, restauradores y estéticos, incluyendo limpiezas, empastes y ortodoncia.",
@@ -135,7 +171,10 @@
   },
   {
     "id": 5,
+    "titulo": "Quieres saber más?",
+    "nameMedico": "Rodrigo",
     "nombre": "Servicio de Nutrición",
+    "servicioDe": "para Nutrición",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -157,8 +196,14 @@
         "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestros pacientes a través de una alimentación equilibrada y adaptada a sus necesidades individuales."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": ""
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/nutricionista.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Nutricionista.jpg",
     "servicios": {
       "guardia": "Disponemos de atención nutricional de urgencia para pacientes que requieran evaluación inmediata en casos de desnutrición severa, trastornos alimentarios o complicaciones metabólicas.",
       "consultorios": "Contamos con consultorios especializados donde realizamos evaluaciones nutricionales personalizadas, planes de alimentación adaptados y seguimiento de pacientes con necesidades específicas.",
@@ -168,7 +213,10 @@
   },
   {
     "id": 6,
+    "titulo": "Quieres saber más?",
+    "nameMedico": "Rodrigo",
     "nombre": "Servicio de Neurología",
+    "servicioDe": "para Neurología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -190,8 +238,14 @@
         "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestros pacientes mediante un diagnóstico temprano y un tratamiento efectivo y especializado."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": ""
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/neurologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Neurologia.jpg",
     "servicios": {
       "guardia": "Disponemos de atención neurológica de urgencia para pacientes que requieran evaluación inmediata en casos de accidentes cerebrovasculares, crisis convulsivas, traumatismos craneoencefálicos y otros trastornos neurológicos agudos.",
       "consultorios": "Contamos con consultorios especializados donde realizamos evaluaciones neurológicas personalizadas, diagnóstico por imágenes y seguimiento de enfermedades neurológicas crónicas y degenerativas.",
@@ -201,7 +255,10 @@
   },
   {
     "id": 7,
+    "titulo": "Quieres saber más?",
+    "nameMedico": "Rodrigo",
     "nombre": "Servicio de Medicina General",
+    "servicioDe": "Medicina General",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -223,8 +280,14 @@
         "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestros pacientes a través de un enfoque preventivo y un tratamiento oportuno."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": ""
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/medico_gral.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Medico_General.jpg",
     "servicios": {
       "guardia": "Disponemos de atención médica de urgencia para la evaluación y tratamiento inmediato de afecciones comunes como infecciones, fiebre alta, hipertensión descontrolada y otras condiciones que requieren asistencia rápida.",
       "consultorios": "Contamos con consultorios especializados para la atención de enfermedades agudas y crónicas, chequeos médicos, control de presión arterial y asesoramiento en salud preventiva.",
@@ -234,8 +297,10 @@
   },
   {
     "id": 8,
+    "titulo": "Quieres saber más?",
+    "nameMedico": "Rodrigo",
     "nombre": "Servicio de Ginecología",
-
+    "servicioDe": "para Ginecología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -257,8 +322,14 @@
         "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestras pacientes mediante un enfoque integral y personalizado en cada etapa de su vida."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": ""
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/ginecologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Ginecologia.jpg",
     "servicios": {
       "guardia": "Disponemos de atención ginecológica de urgencia para pacientes que requieran evaluación inmediata en casos de hemorragias anormales, dolor pélvico agudo, infecciones graves o complicaciones obstétricas.",
       "consultorios": "Contamos con consultorios especializados para chequeos ginecológicos, ecografías, colposcopias, planificación familiar y seguimiento de embarazos.",
@@ -268,8 +339,10 @@
   },
   {
     "id": 9,
+    "titulo": "Quieres saber más?",
+    "nameMedico": "Rodrigo",
     "nombre": "Servicio de Dermatología",
-
+    "servicioDe": "para Dermatología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -291,8 +364,14 @@
         "parrafo": "Nuestro objetivo es mejorar la salud y apariencia de la piel de nuestros pacientes a través de un enfoque integral y personalizado."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": ""
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/dermatologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Dermatologia.jpg",
     "servicios": {
       "guardia": "Disponemos de atención dermatológica de urgencia para pacientes que requieran evaluación inmediata en casos de reacciones alérgicas graves, infecciones severas o quemaduras extensas.",
       "consultorios": "Contamos con consultorios especializados para la atención de enfermedades de la piel, evaluaciones estéticas, procedimientos dermatológicos y control de lunares.",
@@ -302,8 +381,10 @@
   },
   {
     "id": 10,
+    "titulo": "Quieres saber más?",
+    "nameMedico": "Rodrigo",
     "nombre": "Servicio de Cardiología",
-
+    "servicioDe": "para Cardiología",
     "descripcionCard": "Conoce mas acerca del ",
     "descripcion": [
       {
@@ -325,8 +406,14 @@
         "parrafo": "Nuestro objetivo es mejorar la calidad de vida de nuestros pacientes a través de un diagnóstico temprano y un tratamiento integral y personalizado."
       }
     ],
+    "medicos": [
+      {
+        "nombreMedico": ""
+      }
+    ],
     "image": "https://cmm.com.ar/public/img/subidas/noticias/grandes/2023/12/07/cmm-top.webp",
     "imagePerfil": "https://vientodevida.org/servidorimagenes/imagenes/perfil/cardiologia.jpeg",
+    "imagenCarousel": "https://vientodevida.org/servidorimagenes/imagenes/Cardiologia.jpg",
     "servicios": {
       "guardia": "Disponemos de atención cardiológica de urgencia para pacientes que requieran evaluación inmediata en casos de dolor torácico, arritmias graves, insuficiencia cardíaca descompensada o crisis hipertensivas.",
       "consultorios": "Contamos con consultorios especializados para chequeos preventivos, seguimiento de enfermedades cardíacas crónicas y estudios diagnósticos avanzados.",

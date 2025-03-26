@@ -10,14 +10,15 @@ const CarouselComponent = ({ carouselReutilizable, idCarousel }) => {
       navigate("/pagina-registro");
     }, 1000);
   };
+  const usuarioLogueado = JSON.parse(sessionStorage.getItem("usuarioLogueado"));
   return (
     <Carousel className="img-fluid ">
-      {carouselReutilizable.map((imagen, index) => (
+      {carouselReutilizable.map((especialistas, index) => (
         <Carousel.Item interval={3000} key={index}>
           {idCarousel === "carouselregister" && (
             <img
               className="d-block w-100 rounded shadow"
-              src={imagen}
+              src={especialistas.imagenCarousel}
               alt={`Slide ${index + 1}`}
               style={{ width: "100%", height: "600px" }}
             />
@@ -25,22 +26,24 @@ const CarouselComponent = ({ carouselReutilizable, idCarousel }) => {
           {idCarousel === "carouselhome" && (
             <div
               className="parallax-slide "
-              style={{ backgroundImage: `url(${imagen})` }}
+              style={{
+                backgroundImage: `url(${especialistas.imagenCarousel})`,
+              }}
             >
               <div className="container-fluid parallax-content d-flex justify-content-center align-items-center ">
                 <div className="mover-derecha mover-izquierda">
-                  <h2>Titulo 1</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatem
-                  </p>
-                  <Button
-                    variant="primary"
-                    onClick={hanldeClickButtonCarousel}
-                    className="me-3 mb-3"
-                  >
-                    Registrate
-                  </Button>
+                  <h2>{especialistas.nombre}</h2>
+                  <p>{especialistas.descripcionCard + especialistas.nombre}</p>
+
+                  {!usuarioLogueado && (
+                    <Button
+                      variant="primary"
+                      onClick={hanldeClickButtonCarousel}
+                      className="me-3 mb-3"
+                    >
+                      Registrate
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>

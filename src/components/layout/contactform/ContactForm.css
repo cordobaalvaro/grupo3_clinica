@@ -1,0 +1,12 @@
+.boton-enviar {
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.boton-enviar:hover {
+  transform: scale(1.05);
+}
+
+.boton-enviar:active {
+  transform: scale(0.98);
+}

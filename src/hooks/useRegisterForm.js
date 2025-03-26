@@ -3,8 +3,9 @@ import { useNavigate } from "react-router-dom";
 import {
   contraseniaCoinciden,
   contraseniaNoCoinciden,
-  validateRegisterForm
+  validateRegisterForm,
 } from "../utils/validations";
+import Swal from "sweetalert2";
 
 export const useRegisterForm = () => {
   const navigate = useNavigate();
@@ -15,24 +16,24 @@ export const useRegisterForm = () => {
     emailUser: "",
     phoneUser: "",
     passwordUser: "",
-    confirmPasswordUser: ""
+    confirmPasswordUser: "",
   });
 
   const [errores, setErrores] = useState({});
 
-  const handleChangeRegisterForm = e => {
+  const handleChangeRegisterForm = (e) => {
     setRegisterUser({ ...registerUser, [e.target.name]: e.target.value });
   };
 
-  const handleChangeLoginForm = e => {
+  const handleChangeLoginForm = (e) => {
     e.preventDefault();
 
     const usuariosLs = JSON.parse(localStorage.getItem("usuarios")) || [];
     const usuarioExistente = usuariosLs.find(
-      usuario => usuario.nameUser === registerUser.nameUser
+      (usuario) => usuario.nameUser === registerUser.nameUser
     );
     const passwordExistente = usuariosLs.find(
-      password => password.passwordUser === registerUser.passwordUser
+      (password) => password.passwordUser === registerUser.passwordUser
     );
     console.log(usuarioExistente);
 
@@ -46,14 +47,11 @@ export const useRegisterForm = () => {
     setErrores(nuevosErrores);
 
     if (Object.keys(nuevosErrores).length === 0) {
-      if (usuarioExistente) {
+      if (usuarioExistente && passwordExistente) {
         usuarioExistente.login = true;
         setIsLoggedIn(true); // Actualizar el estado de autenticación
 
-        const usuariosActualizados = usuariosLs.map(user =>
-          user.id === usuarioExistente.id ? usuarioExistente : user
-        );
-        localStorage.setItem("usuarios", JSON.stringify(usuariosActualizados));
+        localStorage.setItem("usuarios", JSON.stringify(usuariosLs));
 
         sessionStorage.setItem(
           "usuarioLogueado",
@@ -67,15 +65,17 @@ export const useRegisterForm = () => {
         } else {
           navigate("/pagina-de-administrador");
         }
+        sessionStorage.setItem(
+          "usuarioLogueado",
+          JSON.stringify(usuarioExistente)
+        );
       } else {
-        alert("usuario no existe");
+        alert("usuario y/o contraseña no existe");
       }
     }
-
-    sessionStorage.setItem("usuarioLogueado", JSON.stringify(usuarioExistente));
   };
 
-  const handleClickForm = e => {
+  const handleClickForm = (e) => {
     e.preventDefault();
     const nuevosErrores = validateRegisterForm(registerUser);
     const coinciden = contraseniaCoinciden(registerUser);
@@ -87,9 +87,9 @@ export const useRegisterForm = () => {
         const nuevoUsuario = {
           id: usuariosLs[usuariosLs.length - 1]?.id + 1 || 1,
           ...registerUser,
-          rol: "usuario",
+          rol: "admin",
           login: false,
-          status: "enable"
+          status: "enable",
         };
 
         usuariosLs.push(nuevoUsuario);
@@ -100,51 +100,58 @@ export const useRegisterForm = () => {
           emailUser: "",
           phoneUser: "",
           passwordUser: "",
-          confirmPasswordUser: ""
+          confirmPasswordUser: "",
         });
         setTimeout(() => {
-          alert("Registro exito - inicia sesión");
+          Swal.fire({
+            title: "Registro con exito",
+            icon: "success",
+            draggable: true,
+          });
           navigate("/inicio-de-sesion");
         }, 1000);
       } else {
         setErrores(noCoinciden);
       }
     } else {
-      setErrores(...nuevosErrores, ...noCoinciden);
+      setErrores(nuevosErrores, noCoinciden);
     }
   };
+
   const handleLogoutUser = () => {
     const usuariosLs = JSON.parse(localStorage.getItem("usuarios")) || [];
     const usuarioLogueado = JSON.parse(
       sessionStorage.getItem("usuarioLogueado")
     );
-
+    const usuarioDeslogueado = usuariosLs.find(
+      (usuario) => usuario.login === true
+    );
     if (!usuarioLogueado) {
       alert("No hay usuario logueado.");
       return;
     }
 
     // Buscar al usuario en la lista y actualizar su estado de login
-    const usuariosActualizados = usuariosLs.map(user =>
-      user.id === usuarioLogueado.id ? { ...user, login: false } : user
-    );
+    usuarioDeslogueado.login === false;
 
     // Guardar cambios en localStorage
-    localStorage.setItem("usuarios", JSON.stringify(usuariosActualizados));
+    localStorage.setItem("usuarios", JSON.stringify(usuariosLs));
 
     // Eliminar el usuario activo de sessionStorage
     sessionStorage.removeItem("usuarioLogueado");
+    // localStorage.removeItem('usuarios'); SE AGREGA EN EL CASO DE LIMPIAR EL TURNO EN EL LS
 
     setTimeout(() => {
       navigate("/");
     }, 500);
   };
+
   const labels = {
     nameUser: "Nombre y Apellido",
     emailUser: "Correo Electrónico",
     phoneUser: "Teléfono",
     passwordUser: "Contraseña",
-    confirmPasswordUser: "Confirmar Contraseña"
+    confirmPasswordUser: "Confirmar Contraseña",
   };
 
   return {
@@ -156,6 +163,6 @@ export const useRegisterForm = () => {
     handleChangeLoginForm,
     handleClickForm,
     handleLogoutUser,
-    labels
+    labels,
   };
 };

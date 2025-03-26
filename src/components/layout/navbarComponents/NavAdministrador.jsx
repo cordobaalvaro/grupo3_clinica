@@ -10,23 +10,26 @@ const NavAdministrador = () => {
 
   return (
     <>
-      <Navbar expand='lg' className='bg-body-tertiary'>
+      <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-          <NavLink className={"nav-link"} to='/'>
-            LOGO
+          <NavLink className="nav-link" to="/">
+            <img src="/LogoFavicon.ico" width="75" height="75" alt="Logo " />
           </NavLink>
-          <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='ms-auto'>
-              <NavLink className={"nav-link"} to='/'>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+              <NavLink className={"nav-link"} to="/">
                 Inicio
               </NavLink>
-              <NavLink className={"nav-link"} to='/'>
+              <NavLink className={"nav-link"} to="/view-user-admin">
                 Usuarios
               </NavLink>
+              <NavLink className={"nav-link"} to="/view-specialist-admin">
+                Especialistas
+              </NavLink>
             </Nav>
-            <Nav className='ms-auto'>
-              <NavLink className={"nav-link"} to='#' onClick={handleLogoutUser}>
+            <Nav className="ms-auto">
+              <NavLink className={"nav-link"} to="#" onClick={handleLogoutUser}>
                 Cerrar sesión
               </NavLink>
             </Nav>
@@ -38,4 +41,3 @@ const NavAdministrador = () => {
 };
 
 export default NavAdministrador;
-

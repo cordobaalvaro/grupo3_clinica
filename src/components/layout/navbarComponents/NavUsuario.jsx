@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router";
+import { NavLink } from "react-router";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -12,24 +12,24 @@ const NavUsuario = () => {
     <>
       <Navbar expand='lg' className='bg-body-tertiary'>
         <Container>
-          <NavLink className={"nav-link"} to='/'>
+          <NavLink className={"nav-link"} to='/pagina-de-usuario'>
             LOGO
           </NavLink>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
-              <NavLink className={"nav-link"} to='/'>
+              <NavLink className={"nav-link"} to='/pagina-de-usuario'>
                 Inicio
               </NavLink>
-              <NavLink className={"nav-link"} to='/'>
-                Especialidades
-              </NavLink>
-              <NavLink className={"nav-link"} to='/'>
+              <NavLink className={"nav-link"} to='#'>
                 Contacto
+              </NavLink>
+              <NavLink className={"nav-link"} to='/pagina-de-turnos'>
+                Sacar Turno
               </NavLink>
             </Nav>
             <Nav className='ms-auto'>
-              <NavLink className={"nav-link"} to='/'>
+              <NavLink className={"nav-link"} to='/trabaja-con-nosotros'>
                 Trabaja con nosotros
               </NavLink>
               <NavLink className={"nav-link"} to='#' onClick={handleLogoutUser}>

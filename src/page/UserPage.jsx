@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import HomePage from "./HomePage";
 
 const UserPage = () => {
   return (
-    <div>estas en la pagina UserPage</div>
-  )
-}
+    <div>
+      <HomePage />
+    </div>
+  );
+};
 
-export default UserPage
+export default UserPage;
