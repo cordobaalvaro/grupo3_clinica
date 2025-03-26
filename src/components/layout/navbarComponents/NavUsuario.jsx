@@ -10,29 +10,29 @@ const NavUsuario = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand='lg' className='bg-body-tertiary'>
         <Container>
-          <NavLink className={"nav-link"} to="/">
+          <NavLink className={"nav-link"} to='/pagina-de-usuario'>
             LOGO
           </NavLink>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <NavLink className={"nav-link"} to="/">
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='ms-auto'>
+              <NavLink className={"nav-link"} to='/pagina-de-usuario'>
                 Inicio
               </NavLink>
-              <NavLink className={"nav-link"} to="/">
+              <NavLink className={"nav-link"} to='#'>
                 Contacto
               </NavLink>
-              <NavLink className={"nav-link"} to="/pagina-de-turnos">
+              <NavLink className={"nav-link"} to='/pagina-de-turnos'>
                 Sacar Turno
               </NavLink>
             </Nav>
-            <Nav className="ms-auto">
-              <NavLink className={"nav-link"} to="/trabaja-con-nosotros">
+            <Nav className='ms-auto'>
+              <NavLink className={"nav-link"} to='/trabaja-con-nosotros'>
                 Trabaja con nosotros
               </NavLink>
-              <NavLink className={"nav-link"} to="#" onClick={handleLogoutUser}>
+              <NavLink className={"nav-link"} to='#' onClick={handleLogoutUser}>
                 Cerrar sesion
               </NavLink>
             </Nav>
