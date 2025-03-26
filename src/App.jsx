@@ -13,6 +13,7 @@ import TurnUser from "./page/TurnUser";
 import Eror404 from "./page/Eror404";
 import MedicalAppointment from "./page/MedicalAppointment";
 import MakeAppointment from "./page/MakeAppointment";
+import SobreNosotrosDetalle from "./components/layout/sobreNosotros/SobreNosotrosDetalles";
 
 import RutaProtegida from "./utils/RutasProtegidas";
 import WorikingPage from "./page/WorikingPage";
@@ -25,10 +26,12 @@ function App() {
     <Router>
       <NavbarPage />
       <Routes>
+         
         <Route path="/" element={<HomePage />} />
         <Route path="/inicio-de-sesion" element={<LoginForm />} />
         <Route path="/pagina-registro" element={<RegisterPage />} />
         <Route path="/detalle-especialista/:nombre" element={<SpecialistDetailsPage />} />
+        <Route path='/especialista/:id' element={<SobreNosotrosDetalle />} />  
 
         <Route path="/pagina-de-usuario" element={ <RutaProtegida> <UserPage /> </RutaProtegida> } />
         <Route path="/trabaja-con-nosotros" element={<WorikingPage />} />
@@ -40,6 +43,7 @@ function App() {
         <Route path="/pagina-de-turnos/:nombre" element={ <RutaProtegida> <MedicalAppointment /> </RutaProtegida>}/>
         <Route path="/view-user-admin" element={ <RutaProtegida> <ViewUserAdmin /> </RutaProtegida>}/>
         <Route path="/view-specialist-admin" element={ <RutaProtegida> <ViewSpecialistAdmin /> </RutaProtegida>}/>
+                                                        
 
         <Route path="/*" element={<Eror404 />} />
       </Routes>
