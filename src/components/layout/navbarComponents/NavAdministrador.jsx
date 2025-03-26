@@ -27,6 +27,9 @@ const NavAdministrador = () => {
               <NavLink className={"nav-link"} to="/view-specialist-admin">
                 Especialistas
               </NavLink>
+              <NavLink className={"nav-link"} to="/pagina-solicitud">
+                Solicitud
+              </NavLink>
             </Nav>
             <Nav className="ms-auto">
               <NavLink className={"nav-link"} to="#" onClick={handleLogoutUser}>
