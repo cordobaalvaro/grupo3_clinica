@@ -41,8 +41,7 @@ function App() {
           path="/pagina-de-usuario"
           element={
             <RutaProtegida>
-              {" "}
-              <UserPage />{" "}
+              <UserPage />
             </RutaProtegida>
           }
         />
@@ -51,8 +50,7 @@ function App() {
           path="/pagina-de-administrador"
           element={
             <RutaProtegida>
-              {" "}
-              <AdminPage />{" "}
+              <AdminPage />
             </RutaProtegida>
           }
         />
@@ -60,8 +58,7 @@ function App() {
           path="/pagina-de-turnos"
           element={
             <RutaProtegida>
-              {" "}
-              <MakeAppointment />{" "}
+              <MakeAppointment />
             </RutaProtegida>
           }
         />
@@ -69,8 +66,7 @@ function App() {
           path="/pagina-especialista"
           element={
             <RutaProtegida>
-              {" "}
-              <SpecialistPage />{" "}
+              <SpecialistPage />
             </RutaProtegida>
           }
         />
@@ -78,8 +74,7 @@ function App() {
           path="/turnos-usuarios/:id"
           element={
             <RutaProtegida>
-              {" "}
-              <TurnSpecialist />{" "}
+              <TurnSpecialist />
             </RutaProtegida>
           }
         />
@@ -87,8 +82,7 @@ function App() {
           path="/turnos-especialidades/:nombre"
           element={
             <RutaProtegida>
-              {" "}
-              <TurnUser />{" "}
+              <TurnUser />
             </RutaProtegida>
           }
         />
@@ -96,8 +90,7 @@ function App() {
           path="/pagina-de-turnos/:nombre"
           element={
             <RutaProtegida>
-              {" "}
-              <MedicalAppointment />{" "}
+              <MedicalAppointment />
             </RutaProtegida>
           }
         />
@@ -105,8 +98,7 @@ function App() {
           path="/view-user-admin"
           element={
             <RutaProtegida>
-              {" "}
-              <ViewUserAdmin />{" "}
+              <ViewUserAdmin />
             </RutaProtegida>
           }
         />
@@ -114,8 +106,7 @@ function App() {
           path="/view-specialist-admin"
           element={
             <RutaProtegida>
-              {" "}
-              <ViewSpecialistAdmin />{" "}
+              <ViewSpecialistAdmin />
             </RutaProtegida>
           }
         />
