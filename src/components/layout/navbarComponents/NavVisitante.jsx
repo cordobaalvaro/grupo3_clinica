@@ -14,44 +14,49 @@ const NavVisitante = () => {
       icon: "warning",
       title: "No está logueado",
       text: "Debe iniciar sesión para sacar un turno.",
-      confirmButtonText: "Aceptar",
+      confirmButtonText: "Aceptar"
     });
     navigate("/inicio-de-sesion");
   };
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand='lg' className='bg-body-tertiary'>
         <Container>
-          <NavLink className="nav-link" to="/">
-            <img src="/LogoFavicon.ico" width="75" height="75" alt="Logo " />
+          <NavLink className='nav-link' to='/'>
+            <img
+              src='/Logo_Clinica_sin_fondo.png'
+              width='95'
+              height='95'
+              alt='Logo '
+            />
           </NavLink>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <NavLink className={"nav-link"} to="/">
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='ms-auto'>
+              <NavLink className={"nav-link"} to='/'>
                 Inicio
               </NavLink>
-              <NavLink className={"nav-link"} to="/">
+              <NavLink className={"nav-link"} to='/'>
                 Sobre nosotros
               </NavLink>
-              <NavLink className={"nav-link"} to="/">
+              <NavLink className={"nav-link"} to='/'>
                 Contacto
               </NavLink>
               {usuarioLogueado ? (
-                <NavLink className="nav-link" to="/realizar-turno">
+                <NavLink className='nav-link' to='/realizar-turno'>
                   Sacar Turno
                 </NavLink>
               ) : (
-                <Button variant="outline-success" onClick={alertNoLogin}>
+                <Button variant='outline-success' onClick={alertNoLogin}>
                   Sacar Turno
                 </Button>
               )}
             </Nav>
-            <Nav className="ms-auto">
-              <NavLink className={"nav-link"} to="/inicio-de-sesion">
+            <Nav className='ms-auto'>
+              <NavLink className={"nav-link"} to='/inicio-de-sesion'>
                 Iniciar sesión
               </NavLink>
-              <NavLink className={"nav-link"} to="/pagina-registro">
+              <NavLink className={"nav-link"} to='/pagina-registro'>
                 Registarse
               </NavLink>
             </Nav>

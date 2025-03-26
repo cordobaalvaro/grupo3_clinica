@@ -10,26 +10,31 @@ const NavAdministrador = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand='lg' className='bg-body-tertiary'>
         <Container>
-          <NavLink className="nav-link" to="/">
-            <img src="/LogoFavicon.ico" width="75" height="75" alt="Logo " />
+          <NavLink className='nav-link' to='/pagina-de-administrador'>
+            <img
+              src='/Logo_Clinica_sin_fondo.png'
+              width='95'
+              height='95'
+              alt='Logo '
+            />
           </NavLink>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <NavLink className={"nav-link"} to="/">
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='ms-auto'>
+              <NavLink className={"nav-link"} to='/pagina-de-administrador'>
                 Inicio
               </NavLink>
-              <NavLink className={"nav-link"} to="/view-user-admin">
+              <NavLink className={"nav-link"} to='/view-user-admin'>
                 Usuarios
               </NavLink>
-              <NavLink className={"nav-link"} to="/view-specialist-admin">
+              <NavLink className={"nav-link"} to='/view-specialist-admin'>
                 Especialistas
               </NavLink>
             </Nav>
-            <Nav className="ms-auto">
-              <NavLink className={"nav-link"} to="#" onClick={handleLogoutUser}>
+            <Nav className='ms-auto'>
+              <NavLink className={"nav-link"} to='#' onClick={handleLogoutUser}>
                 Cerrar sesión
               </NavLink>
             </Nav>
