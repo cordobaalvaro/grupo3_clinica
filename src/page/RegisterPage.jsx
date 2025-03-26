@@ -1,8 +1,7 @@
 import { Container, Row, Col, Card, CardBody } from "react-bootstrap";
 import RegisterForm from "../components/forms/RegisterForm";
 import CarouselComponent from "../components/ui/CarouselComponent";
-
-import { imagenesCarouselFormulario } from "../database/imagenesServidor";
+import especialistasApi from "../database/apiServicios.json";
 
 const RegisterPage = () => {
   return (
@@ -17,7 +16,7 @@ const RegisterPage = () => {
         >
           <CarouselComponent
             idCarousel="carouselregister"
-            carouselReutilizable={imagenesCarouselFormulario}
+            carouselReutilizable={especialistasApi}
           />
         </Col>
         <Col xs={12} md={6} lg={4}>

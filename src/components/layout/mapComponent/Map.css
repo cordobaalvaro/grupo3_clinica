@@ -1,0 +1,10 @@
+.map-responsive iframe {
+  width: 90%;
+  height: 600px;
+}
+
+@media (max-width: 768px) {
+  .map-responsive iframe {
+    height: 150px;
+  }
+}
