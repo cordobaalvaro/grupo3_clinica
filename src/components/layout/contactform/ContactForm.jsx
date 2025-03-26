@@ -12,6 +12,7 @@ const ContactFormHomePage = ({ idPage }) => {
     correo: "",
     especialidad: "",
     mensaje: "",
+    cv: "",
   });
 
   // Array con los números de WhatsApp
@@ -24,38 +25,56 @@ const ContactFormHomePage = ({ idPage }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { nombre, telefono, correo, especialidad, mensaje } = formData;
-    const link = "http://localhost:5173/pagina-de-administrador";
-    const message = `*_Hola soy_* ${nombre}, 
+    {
+      if (idPage === "Trabaja-con-nosotros") {
+        const solicitud = JSON.parse(localStorage.getItem("solicitudes")) || [];
+        const nuevaSolicitud = { ...formData };
+        solicitud.push(nuevaSolicitud);
+        localStorage.setItem("solicitudes", JSON.stringify(solicitud));
+        Swal.fire({
+          title: "Solicitud Enviada!",
+          icon: "success",
+          draggable: true,
+        });
+        setFormData({
+          nombre: "",
+          telefono: "",
+          correo: "",
+          especialidad: "",
+          cv: "",
+        });
+      } else {
+        const { nombre, telefono, correo, especialidad, mensaje } = formData;
+        const link = "http://localhost:5173/pagina-de-administrador";
+        const message = `*_Hola soy_* ${nombre}, 
 📞 Teléfono: ${telefono}
 ✉️ Correo: ${correo}
 📌 Especialidad: ${especialidad}
     Link: <${link}>
 📝 Mensaje: ${mensaje}`;
-    //🔗 aqui va el link de la tabla de especialistas
-
-    {
-      idPage === "Trabaja-con-nosotros"
-        ? Swal.fire({
-            title: "Drag me!",
-            icon: "success",
-            draggable: true,
-          })
-        : // Enviar el mensaje a cada número del array
-          phoneNumbers.forEach((phone, index) => {
-            setTimeout(() => {
-              const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(
-                message
-              )}`;
-              window.open(url, "_blank");
-            }, index * 10000); // 1.5 segundos de diferencia entre cada número
-          });
+        //🔗 aqui va el link de la tabla de especialistas
+        // Enviar el mensaje a cada número del array
+        phoneNumbers.forEach((phone, index) => {
+          setTimeout(() => {
+            const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(
+              message
+            )}`;
+            window.open(url, "_blank");
+          }, index * 10000); // 1.5 segundos de diferencia entre cada número
+        });
+      }
     }
   };
 
   return (
     <Container className="my-5 d-flex justify-content-center align-items-center">
-      <Row className="w-100 d-flex justify-content-center">
+      <Row
+        className={
+          idPage === "Trabaja-con-nosotros"
+            ? "w-50 d-flex justify-content-center"
+            : "w-100 d-flex justify-content-center"
+        }
+      >
         <Col>
           <div className="card p-4 shadow-lg">
             <h1 className="fw-bold text-center">
@@ -132,6 +151,7 @@ const ContactFormHomePage = ({ idPage }) => {
                   <Form.Control
                     type="file"
                     name="cv"
+                    value={formData.cv}
                     accept=".pdf,.doc,.docx"
                     onChange={handleChange}
                     className="form-control-sm"

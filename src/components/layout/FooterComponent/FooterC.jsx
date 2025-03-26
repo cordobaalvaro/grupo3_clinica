@@ -14,7 +14,7 @@ const FooterC = () => {
           className="d-flex justify-content-center mt-3"
         >
           <NavLink className="nav-link" to="/">
-            <img src="/LogoFavicon.ico" width="100" height="100" alt="Logo " />
+            <img src="/LogoFavicon.ico" width="75" height="75" alt="Logo " />
           </NavLink>
         </Col>
         <Col
@@ -29,7 +29,7 @@ const FooterC = () => {
           <a href="https://x.com/" target="_balnk">
             <FaTwitter size={40} color="#00FF80" />
           </a>
-          <a href="https://x.com/" target="_balnk">
+          <a href="https://www.instagram.com/" target="_balnk">
             <FaInstagram size={40} color="#49f1d8" />
           </a>
         </Col>
