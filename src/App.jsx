@@ -23,25 +23,25 @@ function App() {
     <Router>
       <NavbarPage />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/inicio-de-sesion" element={<LoginForm />} />
-        <Route path="/pagina-registro" element={<RegisterPage />} />
+        <Route path='/' element={<HomePage />} />
+        <Route path='/inicio-de-sesion' element={<LoginForm />} />
+        <Route path='/pagina-registro' element={<RegisterPage />} />
         <Route
-          path="/detalle-especialista/:nombre"
+          path='/detalle-especialista/:nombre'
           element={<SpecialistDetailsPage />}
         />
 
         <Route
-          path="/pagina-de-usuario"
+          path='/pagina-de-usuario'
           element={
             <RutaProtegida>
               <UserPage />
             </RutaProtegida>
           }
-         <Route path="/trabaja-con-nosotros" element={<WorikingPage />} />
         />
+        <Route path='/trabaja-con-nosotros' element={<WorikingPage />} />
         <Route
-          path="/pagina-de-administrador"
+          path='/pagina-de-administrador'
           element={
             <RutaProtegida>
               <AdminPage />
@@ -49,7 +49,7 @@ function App() {
           }
         />
         <Route
-          path="/pagina-de-turnos"
+          path='/pagina-de-turnos'
           element={
             <RutaProtegida>
               <MakeAppointment />
@@ -57,7 +57,7 @@ function App() {
           }
         />
         <Route
-          path="/pagina-especialista"
+          path='/pagina-especialista'
           element={
             <RutaProtegida>
               <SpecialistPage />
@@ -65,7 +65,7 @@ function App() {
           }
         />
         <Route
-          path="/turnos-usuarios/:id"
+          path='/turnos-usuarios/:id'
           element={
             <RutaProtegida>
               <TurnSpecialist />
@@ -73,7 +73,7 @@ function App() {
           }
         />
         <Route
-          path="/turnos-especialidades/:nombre"
+          path='/turnos-especialidades/:nombre'
           element={
             <RutaProtegida>
               <TurnUser />
@@ -81,7 +81,7 @@ function App() {
           }
         />
         <Route
-          path="/pagina-de-turnos/:nombre"
+          path='/pagina-de-turnos/:nombre'
           element={
             <RutaProtegida>
               <MedicalAppointment />
@@ -89,7 +89,7 @@ function App() {
           }
         />
 
-        <Route path="/*" element={<Eror404 />} />
+        <Route path='/*' element={<Eror404 />} />
       </Routes>
       <FooterC />
     </Router>
