@@ -6,26 +6,39 @@ const LoginForm = () => {
     registerUser,
     errores,
     handleChangeRegisterForm,
-    handleChangeLoginForm
+    handleChangeLoginForm,
   } = useRegisterForm();
   return (
-    <Row className="d-flex justify-content-center">
+    <Row
+      className="d-flex justify-content-center align-items-center"
+      style={{ height: "80vh" }}
+    >
       <Col sm={10} md={4} xl={4} className="p-3">
         <Card className="p-3 mt-3">
           <Form>
             <Form.Group className="mb-3" controlId="formGroupEmail">
               <Form.Label>Nombre de Usuario</Form.Label>
-              <Form.Control type="text" placeholder="Nombre de usuario" name="nameUser" value={registerUser.nameUser} onChange={handleChangeRegisterForm} isInvalid={errores.nameUser} />
-              {
-                <p className="text-danger">{errores.nameUser}</p>
-              }
+              <Form.Control
+                type="text"
+                placeholder="Nombre de usuario"
+                name="nameUser"
+                value={registerUser.nameUser}
+                onChange={handleChangeRegisterForm}
+                isInvalid={errores.nameUser}
+              />
+              {<p className="text-danger">{errores.nameUser}</p>}
             </Form.Group>
             <Form.Group className="mb-3" controlId="formGroupPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" name="passwordUser" value={registerUser.passwordUser} onChange={handleChangeRegisterForm} isInvalid={errores.passwordUser} />
-              {
-                <p className="text-danger">{errores.passwordUser}</p>
-              }
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                name="passwordUser"
+                value={registerUser.passwordUser}
+                onChange={handleChangeRegisterForm}
+                isInvalid={errores.passwordUser}
+              />
+              {<p className="text-danger">{errores.passwordUser}</p>}
             </Form.Group>
           </Form>
           <Button
@@ -42,4 +55,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm
+export default LoginForm;
