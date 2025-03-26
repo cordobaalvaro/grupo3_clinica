@@ -38,8 +38,9 @@ function App() {
               <UserPage />
             </RutaProtegida>
           }
-         <Route path="/trabaja-con-nosotros" element={<WorikingPage />} />
+         
         />
+        <Route path="/trabaja-con-nosotros" element={<WorikingPage />} />
         <Route
           path="/pagina-de-administrador"
           element={
