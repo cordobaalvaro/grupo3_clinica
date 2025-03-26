@@ -13,10 +13,13 @@ import TurnUser from "./page/TurnUser";
 import Eror404 from "./page/Eror404";
 import MedicalAppointment from "./page/MedicalAppointment";
 import MakeAppointment from "./page/MakeAppointment";
+import SobreNosotrosDetalle from "./components/layout/sobreNosotros/SobreNosotrosDetalles";
 
 import RutaProtegida from "./utils/RutasProtegidas";
 import WorikingPage from "./page/WorikingPage";
 import "./App.css";
+import ViewUserAdmin from "./page/ViewUserAdmin";
+import ViewSpecialistAdmin from "./page/ViewSpecialistAdmin";
 
 function App() {
   return (
@@ -30,12 +33,14 @@ function App() {
           path='/detalle-especialista/:nombre'
           element={<SpecialistDetailsPage />}
         />
+        <Route path='/especialista/:id' element={<SobreNosotrosDetalle />} />
 
         <Route
           path='/pagina-de-usuario'
           element={
             <RutaProtegida>
-              <UserPage />
+              {" "}
+              <UserPage />{" "}
             </RutaProtegida>
           }
         />
@@ -44,7 +49,8 @@ function App() {
           path='/pagina-de-administrador'
           element={
             <RutaProtegida>
-              <AdminPage />
+              {" "}
+              <AdminPage />{" "}
             </RutaProtegida>
           }
         />
@@ -52,7 +58,8 @@ function App() {
           path='/pagina-de-turnos'
           element={
             <RutaProtegida>
-              <MakeAppointment />
+              {" "}
+              <MakeAppointment />{" "}
             </RutaProtegida>
           }
         />
@@ -60,7 +67,8 @@ function App() {
           path='/pagina-especialista'
           element={
             <RutaProtegida>
-              <SpecialistPage />
+              {" "}
+              <SpecialistPage />{" "}
             </RutaProtegida>
           }
         />
@@ -68,7 +76,8 @@ function App() {
           path='/turnos-usuarios/:id'
           element={
             <RutaProtegida>
-              <TurnSpecialist />
+              {" "}
+              <TurnSpecialist />{" "}
             </RutaProtegida>
           }
         />
@@ -76,7 +85,8 @@ function App() {
           path='/turnos-especialidades/:nombre'
           element={
             <RutaProtegida>
-              <TurnUser />
+              {" "}
+              <TurnUser />{" "}
             </RutaProtegida>
           }
         />
@@ -84,7 +94,26 @@ function App() {
           path='/pagina-de-turnos/:nombre'
           element={
             <RutaProtegida>
-              <MedicalAppointment />
+              {" "}
+              <MedicalAppointment />{" "}
+            </RutaProtegida>
+          }
+        />
+        <Route
+          path='/view-user-admin'
+          element={
+            <RutaProtegida>
+              {" "}
+              <ViewUserAdmin />{" "}
+            </RutaProtegida>
+          }
+        />
+        <Route
+          path='/view-specialist-admin'
+          element={
+            <RutaProtegida>
+              {" "}
+              <ViewSpecialistAdmin />{" "}
             </RutaProtegida>
           }
         />

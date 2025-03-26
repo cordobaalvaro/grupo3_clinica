@@ -5,6 +5,8 @@ import SpecialistComponent from "../components/layout/specialistComponent/Specia
 import ContactPage from "../components/layout/contactComponent/ContactComponent";
 
 import especialistasApi from "../database/apiServicios.json";
+import ContactComponent from "../components/layout/contactComponent/ContactComponent";
+import SobreNosotrosComponent from "../components/layout/sobreNosotros/SobreNosotrosComponent";
 
 const HomePage = () => {
   return (
@@ -28,6 +30,8 @@ const HomePage = () => {
           ))}
         </Row>
       </Container>
+      <SobreNosotrosComponent/>
+      <ContactComponent />
     </>
   );
 };

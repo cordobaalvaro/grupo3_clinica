@@ -56,7 +56,7 @@ const ContactFormHomePage = ({ idPage }) => {
   return (
     <Container className="my-5 d-flex justify-content-center align-items-center">
       <Row className="w-100 d-flex justify-content-center">
-        <Col xs={12} md={8} lg={6}>
+        <Col>
           <div className="card p-4 shadow-lg">
             <h1 className="fw-bold text-center">
               {idPage === "Trabaja-con-nosotros"

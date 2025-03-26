@@ -18,12 +18,9 @@ const NavAdministrador = () => {
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
-              <NavLink className={"nav-link"} to='/'>
-                Inicio
-              </NavLink>
-              <NavLink className={"nav-link"} to='/'>
-                Usuarios
-              </NavLink>
+              <NavLink className={"nav-link"} to='/'>Inicio</NavLink>
+              <NavLink className={"nav-link"} to='/view-user-admin'>Usuarios</NavLink>
+              <NavLink className={"nav-link"} to='/view-specialist-admin'>Especialistas</NavLink>
             </Nav>
             <Nav className='ms-auto'>
               <NavLink className={"nav-link"} to='#' onClick={handleLogoutUser}>
