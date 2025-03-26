@@ -5,18 +5,19 @@ import SpecialistComponent from "../components/layout/specialistComponent/Specia
 import ContactPage from "../components/layout/contactComponent/ContactComponent";
 
 import especialistasApi from "../database/apiServicios.json";
+import SobreNosotrosComponent from "../components/layout/sobreNosotros/SobreNosotrosComponent";
 
 const HomePage = () => {
   return (
     <>
       <CarouselComponent
-        idCarousel="carouselhome"
+        idCarousel='carouselhome'
         carouselReutilizable={especialistasApi}
       />
       <Container>
         <Row>
           {especialistasApi.map((especialista, index) => (
-            <Col md={4} className="mb-4" key={index}>
+            <Col md={4} className='mb-4' key={index}>
               <SpecialistComponent
                 imagePerfil={especialista.imagePerfil}
                 nombre={especialista.nombre}
@@ -27,6 +28,7 @@ const HomePage = () => {
             </Col>
           ))}
         </Row>
+        <SobreNosotrosComponent />
       </Container>
     </>
   );
