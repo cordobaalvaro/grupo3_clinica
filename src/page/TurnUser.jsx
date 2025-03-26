@@ -54,6 +54,7 @@ const TurnUser = () => {
 
     const nuevoTurno = {
       id: usuarioLogueado ? usuarioLogueado.id : "usuario no encontrado",
+      idTurno: Date.now(),
       medico: turnoEspecialista.medicos[0].nombreMedico, // Puedes reemplazar esto con el nombre real
       paciente: usuarioLogueado
         ? usuarioLogueado.nameUser
@@ -61,7 +62,7 @@ const TurnUser = () => {
       especialidad: turnoEspecialista.nombre,
       fechaturno: fechaturno,
       horaturno: horaturno,
-      "estado": "espera"
+      estado: "espera",
     };
 
     const nuevosTurnos = [...listadeturnos, nuevoTurno];

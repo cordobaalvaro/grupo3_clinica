@@ -87,7 +87,7 @@ export const useRegisterForm = () => {
         const nuevoUsuario = {
           id: usuariosLs[usuariosLs.length - 1]?.id + 1 || 1,
           ...registerUser,
-          rol: "admin",
+          rol: "usuario",
           login: false,
           status: "enable",
         };
