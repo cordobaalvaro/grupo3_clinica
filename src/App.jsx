@@ -15,8 +15,8 @@ import MedicalAppointment from "./page/MedicalAppointment";
 import MakeAppointment from "./page/MakeAppointment";
 
 import RutaProtegida from "./utils/RutasProtegidas";
-import "./App.css";
 import WorikingPage from "./page/WorikingPage";
+import "./App.css";
 
 function App() {
   return (
@@ -26,15 +26,11 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/inicio-de-sesion" element={<LoginForm />} />
         <Route path="/pagina-registro" element={<RegisterPage />} />
-        <Route path="/trabaja-con-nosotros" element={<WorikingPage />} />
         <Route
           path="/detalle-especialista/:nombre"
           element={<SpecialistDetailsPage />}
         />
-        <Route
-          path="/detalle-especialista/:nombre"
-          element={<SpecialistDetailsPage />}
-        />
+
         <Route
           path="/pagina-de-usuario"
           element={
@@ -42,6 +38,7 @@ function App() {
               <UserPage />
             </RutaProtegida>
           }
+         <Route path="/trabaja-con-nosotros" element={<WorikingPage />} />
         />
         <Route
           path="/pagina-de-administrador"
@@ -52,7 +49,7 @@ function App() {
           }
         />
         <Route
-          path="/pagina-de-turnos/"
+          path="/pagina-de-turnos"
           element={
             <RutaProtegida>
               <MakeAppointment />
@@ -91,6 +88,7 @@ function App() {
             </RutaProtegida>
           }
         />
+
         <Route path="/*" element={<Eror404 />} />
       </Routes>
       <FooterC />

@@ -22,9 +22,6 @@ const NavUsuario = () => {
                 Inicio
               </NavLink>
               <NavLink className={"nav-link"} to="/">
-                Especialidades
-              </NavLink>
-              <NavLink className={"nav-link"} to="/">
                 Contacto
               </NavLink>
               <NavLink className={"nav-link"} to="/pagina-de-turnos">
@@ -32,7 +29,7 @@ const NavUsuario = () => {
               </NavLink>
             </Nav>
             <Nav className="ms-auto">
-              <NavLink className={"nav-link"} to="/Trabaja-con-nosotros">
+              <NavLink className={"nav-link"} to="/trabaja-con-nosotros">
                 Trabaja con nosotros
               </NavLink>
               <NavLink className={"nav-link"} to="#" onClick={handleLogoutUser}>
