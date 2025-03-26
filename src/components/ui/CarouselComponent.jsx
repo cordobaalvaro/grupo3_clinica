@@ -10,6 +10,7 @@ const CarouselComponent = ({ carouselReutilizable, idCarousel }) => {
       navigate("/pagina-registro");
     }, 1000);
   };
+  const usuarioLogueado = JSON.parse(sessionStorage.getItem("usuarioLogueado"));
   return (
     <Carousel className="img-fluid ">
       {carouselReutilizable.map((especialistas, index) => (
@@ -33,13 +34,16 @@ const CarouselComponent = ({ carouselReutilizable, idCarousel }) => {
                 <div className="mover-derecha mover-izquierda">
                   <h2>{especialistas.nombre}</h2>
                   <p>{especialistas.descripcionCard + especialistas.nombre}</p>
-                  <Button
-                    variant="primary"
-                    onClick={hanldeClickButtonCarousel}
-                    className="me-3 mb-3"
-                  >
-                    Registrate
-                  </Button>
+
+                  {!usuarioLogueado && (
+                    <Button
+                      variant="primary"
+                      onClick={hanldeClickButtonCarousel}
+                      className="me-3 mb-3"
+                    >
+                      Registrate
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
