@@ -5,6 +5,7 @@ import {
   contraseniaNoCoinciden,
   validateRegisterForm,
 } from "../utils/validations";
+import Swal from "sweetalert2";
 
 export const useRegisterForm = () => {
   const navigate = useNavigate();
@@ -86,7 +87,7 @@ export const useRegisterForm = () => {
         const nuevoUsuario = {
           id: usuariosLs[usuariosLs.length - 1]?.id + 1 || 1,
           ...registerUser,
-          rol: "usuario",
+          rol: "admin",
           login: false,
           status: "enable",
         };
@@ -102,7 +103,11 @@ export const useRegisterForm = () => {
           confirmPasswordUser: "",
         });
         setTimeout(() => {
-          alert("Registro exito - inicia sesión");
+          Swal.fire({
+            title: "Registro con exito",
+            icon: "success",
+            draggable: true,
+          });
           navigate("/inicio-de-sesion");
         }, 1000);
       } else {
@@ -140,7 +145,7 @@ export const useRegisterForm = () => {
       navigate("/");
     }, 500);
   };
-  
+
   const labels = {
     nameUser: "Nombre y Apellido",
     emailUser: "Correo Electrónico",

@@ -16,7 +16,7 @@ const HomePage = () => {
         carouselReutilizable={especialistasApi}
       />
       <Container>
-        <Row>
+        <Row className="mt-5">
           {especialistasApi.map((especialista, index) => (
             <Col md={4} className="mb-4" key={index}>
               <SpecialistComponent
@@ -30,7 +30,7 @@ const HomePage = () => {
           ))}
         </Row>
       </Container>
-      <SobreNosotrosComponent/>
+      <SobreNosotrosComponent />
       <ContactComponent />
     </>
   );
