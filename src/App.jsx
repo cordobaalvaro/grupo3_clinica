@@ -17,6 +17,8 @@ import MakeAppointment from "./page/MakeAppointment";
 import RutaProtegida from "./utils/RutasProtegidas";
 import WorikingPage from "./page/WorikingPage";
 import "./App.css";
+import ViewUserAdmin from "./page/ViewUserAdmin";
+import ViewSpecialistAdmin from "./page/ViewSpecialistAdmin";
 
 function App() {
   return (
@@ -26,54 +28,18 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/inicio-de-sesion" element={<LoginForm />} />
         <Route path="/pagina-registro" element={<RegisterPage />} />
-        <Route
-          path="/detalle-especialista/:nombre"
-          element={<SpecialistDetailsPage />}
-        />
+        <Route path="/detalle-especialista/:nombre" element={<SpecialistDetailsPage />} />
 
         <Route path="/pagina-de-usuario" element={ <RutaProtegida> <UserPage /> </RutaProtegida> } />
         <Route path="/trabaja-con-nosotros" element={<WorikingPage />} />
         <Route path="/pagina-de-administrador" element={ <RutaProtegida> <AdminPage /> </RutaProtegida> } />
-        <Route
-          path="/pagina-de-turnos"
-          element={
-            <RutaProtegida>
-              <MakeAppointment />
-            </RutaProtegida>
-          }
-        />
-        <Route
-          path="/pagina-especialista"
-          element={
-            <RutaProtegida>
-              <SpecialistPage />
-            </RutaProtegida>
-          }
-        />
-        <Route
-          path="/turnos-usuarios/:id"
-          element={
-            <RutaProtegida>
-              <TurnSpecialist />
-            </RutaProtegida>
-          }
-        />
-        <Route
-          path="/turnos-especialidades/:nombre"
-          element={
-            <RutaProtegida>
-              <TurnUser />
-            </RutaProtegida>
-          }
-        />
-        <Route
-          path="/pagina-de-turnos/:nombre"
-          element={
-            <RutaProtegida>
-              <MedicalAppointment />
-            </RutaProtegida>
-          }
-        />
+        <Route path="/pagina-de-turnos" element={ <RutaProtegida> <MakeAppointment /> </RutaProtegida> } />
+        <Route path="/pagina-especialista" element={ <RutaProtegida> <SpecialistPage /> </RutaProtegida> } />
+        <Route path="/turnos-usuarios/:id" element={ <RutaProtegida> <TurnSpecialist /> </RutaProtegida> } />
+        <Route path="/turnos-especialidades/:nombre" element={ <RutaProtegida> <TurnUser /> </RutaProtegida> } />
+        <Route path="/pagina-de-turnos/:nombre" element={ <RutaProtegida> <MedicalAppointment /> </RutaProtegida>}/>
+        <Route path="/view-user-admin" element={ <RutaProtegida> <ViewUserAdmin /> </RutaProtegida>}/>
+        <Route path="/view-specialist-admin" element={ <RutaProtegida> <ViewSpecialistAdmin /> </RutaProtegida>}/>
 
         <Route path="/*" element={<Eror404 />} />
       </Routes>
