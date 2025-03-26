@@ -61,6 +61,7 @@ const TurnUser = () => {
       especialidad: turnoEspecialista.nombre,
       fechaturno: fechaturno,
       horaturno: horaturno,
+      "estado": "espera"
     };
 
     const nuevosTurnos = [...listadeturnos, nuevoTurno];

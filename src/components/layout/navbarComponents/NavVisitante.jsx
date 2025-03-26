@@ -7,8 +7,8 @@ import Swal from "sweetalert2";
 import { Button } from "react-bootstrap";
 
 const NavVisitante = () => {
-  const usuarioLogueado = JSON.parse(sessionStorage.getItem('usuarioLogueado'))
-  const navigate = useNavigate()
+  const usuarioLogueado = JSON.parse(sessionStorage.getItem("usuarioLogueado"));
+  const navigate = useNavigate();
   const alertNoLogin = () => {
     Swal.fire({
       icon: "warning",
@@ -16,28 +16,25 @@ const NavVisitante = () => {
       text: "Debe iniciar sesión para sacar un turno.",
       confirmButtonText: "Aceptar",
     });
-    navigate('/inicio-de-sesion')
+    navigate("/inicio-de-sesion");
   };
   return (
     <>
-      <Navbar expand='lg' className='bg-body-tertiary'>
+      <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-          <NavLink className={"nav-link"} to='/'>
+          <NavLink className={"nav-link"} to="/">
             LOGO
           </NavLink>
-          <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='ms-auto'>
-              <NavLink className={"nav-link"} to='/'>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+              <NavLink className={"nav-link"} to="/">
                 Inicio
               </NavLink>
-              <NavLink className={"nav-link"} to='/'>
+              <NavLink className={"nav-link"} to="/">
                 Sobre nosotros
               </NavLink>
-              <NavLink className={"nav-link"} to='/'>
-                Especialidades
-              </NavLink>
-              <NavLink className={"nav-link"} to='/'>
+              <NavLink className={"nav-link"} to="/">
                 Contacto
               </NavLink>
               {usuarioLogueado ? (
@@ -45,16 +42,16 @@ const NavVisitante = () => {
                   Sacar Turno
                 </NavLink>
               ) : (
-                  <Button variant="outline-success" onClick={alertNoLogin}>
+                <Button variant="outline-success" onClick={alertNoLogin}>
                   Sacar Turno
                 </Button>
               )}
             </Nav>
-            <Nav className='ms-auto'>
-              <NavLink className={"nav-link"} to='/inicio-de-sesion'>
+            <Nav className="ms-auto">
+              <NavLink className={"nav-link"} to="/inicio-de-sesion">
                 Iniciar sesión
               </NavLink>
-              <NavLink className={"nav-link"} to='/pagina-registro'>
+              <NavLink className={"nav-link"} to="/pagina-registro">
                 Registarse
               </NavLink>
             </Nav>

@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Map from "../mapComponent/Map";
 import ContactForm from "../contactform/ContactForm";
 
-const ContactPage = () => {
+const ContactComponent = () => {
   return (
     <>
       <Container className='mt-5'>
@@ -21,4 +21,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default ContactComponent;

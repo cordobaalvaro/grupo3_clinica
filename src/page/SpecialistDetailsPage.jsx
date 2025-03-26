@@ -23,8 +23,6 @@ const SpecialistDetailsPage = () => {
     return <p>Cargando o especialista no encontrado...</p>;
   }
 
-
-
   return (
     <div>
       <div
