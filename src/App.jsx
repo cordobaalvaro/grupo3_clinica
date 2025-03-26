@@ -15,6 +15,7 @@ import MedicalAppointment from "./page/MedicalAppointment";
 import MakeAppointment from "./page/MakeAppointment";
 
 import RutaProtegida from "./utils/RutasProtegidas";
+import WorikingPage from "./page/WorikingPage";
 import "./App.css";
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
               <UserPage />
             </RutaProtegida>
           }
+         <Route path="/trabaja-con-nosotros" element={<WorikingPage />} />
         />
         <Route
           path="/pagina-de-administrador"
