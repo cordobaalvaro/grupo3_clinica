@@ -20,110 +20,102 @@ import WorikingPage from "./page/WorikingPage";
 import "./App.css";
 import ViewUserAdmin from "./page/ViewUserAdmin";
 import ViewSpecialistAdmin from "./page/ViewSpecialistAdmin";
-
+import SolicitudPage from "./page/SolicitudPage";
 
 function App() {
   return (
     <Router>
       <NavbarPage />
       <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/inicio-de-sesion' element={<LoginForm />} />
-        <Route path='/pagina-registro' element={<RegisterPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/inicio-de-sesion" element={<LoginForm />} />
+        <Route path="/pagina-registro" element={<RegisterPage />} />
         <Route
-          path='/detalle-especialista/:nombre'
+          path="/detalle-especialista/:nombre"
           element={<SpecialistDetailsPage />}
         />
-        <Route path='/especialista/:id' element={<SobreNosotrosDetalle />} />
+        <Route path="/especialista/:id" element={<SobreNosotrosDetalle />} />
+        <Route path="/pagina-solicitud" element={<SolicitudPage />} />
 
         <Route
-          path='/pagina-de-usuario'
+          path="/pagina-de-usuario"
           element={
             <RutaProtegida>
-              {" "}
-              <UserPage />{" "}
+              <UserPage />
             </RutaProtegida>
           }
         />
-        <Route path='/trabaja-con-nosotros' element={<WorikingPage />} />
+        <Route path="/trabaja-con-nosotros" element={<WorikingPage />} />
         <Route
-          path='/pagina-de-administrador'
+          path="/pagina-de-administrador"
           element={
             <RutaProtegida>
-              {" "}
-              <AdminPage />{" "}
-            </RutaProtegida>
-          }
-        />
-        <Route
-          path='/pagina-de-turnos'
-          element={
-            <RutaProtegida>
-              {" "}
-              <MakeAppointment />{" "}
+              <AdminPage />
             </RutaProtegida>
           }
         />
         <Route
-          path='/pagina-especialista'
+          path="/pagina-de-turnos"
           element={
             <RutaProtegida>
-              {" "}
-              <SpecialistPage />{" "}
+              <MakeAppointment />
             </RutaProtegida>
           }
         />
         <Route
-          path='/turnos-usuarios/:id'
+          path="/pagina-especialista"
           element={
             <RutaProtegida>
-              {" "}
-              <TurnSpecialist />{" "}
+              <SpecialistPage />
             </RutaProtegida>
           }
         />
         <Route
-          path='/turnos-especialidades/:nombre'
+          path="/turnos-usuarios/:id"
           element={
             <RutaProtegida>
-              {" "}
-              <TurnUser />{" "}
+              <TurnSpecialist />
             </RutaProtegida>
           }
         />
         <Route
-          path='/pagina-de-turnos/:nombre'
+          path="/turnos-especialidades/:nombre"
           element={
             <RutaProtegida>
-              {" "}
-              <MedicalAppointment />{" "}
+              <TurnUser />
             </RutaProtegida>
           }
         />
         <Route
-          path='/view-user-admin'
+          path="/pagina-de-turnos/:nombre"
           element={
             <RutaProtegida>
-              {" "}
-              <ViewUserAdmin />{" "}
+              <MedicalAppointment />
             </RutaProtegida>
           }
         />
         <Route
-          path='/view-specialist-admin'
+          path="/view-user-admin"
           element={
             <RutaProtegida>
-              {" "}
-              <ViewSpecialistAdmin />{" "}
+              <ViewUserAdmin />
+            </RutaProtegida>
+          }
+        />
+        <Route
+          path="/view-specialist-admin"
+          element={
+            <RutaProtegida>
+              <ViewSpecialistAdmin />
             </RutaProtegida>
           }
         />
 
-        <Route path='/*' element={<Eror404 />} />
+        <Route path="/*" element={<Eror404 />} />
       </Routes>
       <FooterC />
     </Router>
   );
 }
 
-export default App;
+export default App;

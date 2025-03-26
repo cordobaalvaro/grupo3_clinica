@@ -29,7 +29,11 @@ const ContactFormHomePage = ({ idPage }) => {
     {
       if (idPage === "Trabaja-con-nosotros") {
         const solicitud = JSON.parse(localStorage.getItem("solicitudes")) || [];
-        const nuevaSolicitud = { ...formData };
+        const nuevaSolicitud = {
+          id: solicitud[solicitud.length - 1]?.id + 1 || 1,
+          ...formData,
+          estado: "espera",
+        };
         solicitud.push(nuevaSolicitud);
         localStorage.setItem("solicitudes", JSON.stringify(solicitud));
         Swal.fire({
