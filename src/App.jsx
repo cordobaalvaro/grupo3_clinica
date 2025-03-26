@@ -31,24 +31,9 @@ function App() {
           element={<SpecialistDetailsPage />}
         />
 
-        <Route
-          path="/pagina-de-usuario"
-          element={
-            <RutaProtegida>
-              <UserPage />
-            </RutaProtegida>
-          }
-         
-        />
+        <Route path="/pagina-de-usuario" element={ <RutaProtegida> <UserPage /> </RutaProtegida> } />
         <Route path="/trabaja-con-nosotros" element={<WorikingPage />} />
-        <Route
-          path="/pagina-de-administrador"
-          element={
-            <RutaProtegida>
-              <AdminPage />
-            </RutaProtegida>
-          }
-        />
+        <Route path="/pagina-de-administrador" element={ <RutaProtegida> <AdminPage /> </RutaProtegida> } />
         <Route
           path="/pagina-de-turnos"
           element={
