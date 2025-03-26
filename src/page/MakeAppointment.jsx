@@ -37,20 +37,6 @@ const MakeAppointment = () => {
     setConsultasPorEspecialidad(agrupadas);
   }, []);
 
-  // const medicos = [
-  //   {
-  //     imagen: "traumatologia.jpeg",
-  //     especialidad: "Traumatología",
-  //     medico: "Silvia Trauma",
-  //   },
-  //   {
-  //     imagen: "psicologia.jpeg",
-  //     especialidad: "Servicio de Psicología",
-  //     medico: "Rodrigo CasaGrande",
-  //   },
-  //   // ... otros médicos
-  // ];
-
   const handleNavegar = (especialidad, medico, imagen) => {
     localStorage.setItem("especialidad", especialidad);
     localStorage.setItem("medico", medico);
