@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import HomePage from "./HomePage";
 
 const AdminPage = () => {
   return (
-    <div>estas en la pagina AdminPage</div>
-  )
-}
+    <div>
+      <HomePage idPage='admin' />
+    </div>
+  );
+};
 
-export default AdminPage
+export default AdminPage;

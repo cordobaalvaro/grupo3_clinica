@@ -12,8 +12,13 @@ const NavUsuario = () => {
     <>
       <Navbar expand='lg' className='bg-body-tertiary'>
         <Container>
-          <NavLink className={"nav-link"} to='/pagina-de-usuario'>
-            LOGO
+          <NavLink className='nav-link' to='/pagina-de-usuario'>
+            <img
+              src='/Logo_Clinica_sin_fondo.png'
+              width='95'
+              height='95'
+              alt='Logo '
+            />
           </NavLink>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
@@ -24,8 +29,15 @@ const NavUsuario = () => {
               <NavLink className={"nav-link"} to='#'>
                 Contacto
               </NavLink>
-              <NavLink className={"nav-link"} to='/pagina-de-turnos'>
+              <NavLink
+                variant='outline-success'
+                className={"nav-link"}
+                to='/pagina-de-turnos'
+              >
                 Sacar Turno
+              </NavLink>
+              <NavLink className={"nav-link"} to='/#sobre-nosotros'>
+                Sobre nosotros
               </NavLink>
             </Nav>
             <Nav className='ms-auto'>
