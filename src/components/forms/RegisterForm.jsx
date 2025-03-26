@@ -1,5 +1,6 @@
 import { Button, Form } from "react-bootstrap";
 import { useRegisterForm } from "../../hooks/useRegisterForm";
+import { Link } from "react-router-dom";
 
 const RegisterForm = () => {
   const {
@@ -55,6 +56,10 @@ const RegisterForm = () => {
       >
         Registrarse
       </Button>
+      <div className="text-center mt-3">
+        <span>¿Ya tienes cuenta? </span>
+        <Link to="/">Inicia Sesión</Link>
+      </div>
     </Form>
   );
 };
